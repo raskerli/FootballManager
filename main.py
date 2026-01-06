@@ -27,7 +27,6 @@ class UCLManager:
         self.restart_game(initial=True)
 
         # --- TABS SETUP ---
-        # Starting x=50 to make room for the scroll button
         self.tabs = {
             'DASHBOARD': Tab("Dashboard", pygame.Rect(50, 100, 130, 50)),
             'SQUAD': Tab("Squad", pygame.Rect(190, 100, 130, 50)),
@@ -38,7 +37,7 @@ class UCLManager:
             'STANDINGS': Tab("Table", pygame.Rect(890, 100, 130, 50)),
             'STATS': Tab("Stats", pygame.Rect(1030, 100, 130, 50)),
             'FIXTURES': Tab("Knockout", pygame.Rect(1170, 100, 130, 50)),
-            'HISTORY': Tab("History", pygame.Rect(1310, 100, 130, 50))  # Initially off-screen
+            'HISTORY': Tab("History", pygame.Rect(1310, 100, 130, 50))
         }
 
     def toggle_fullscreen(self):
@@ -123,6 +122,10 @@ class UCLManager:
         self.btn_world_stats = None;
         self.btn_back = None
         self.btn_retire = None
+        # Default tactic buttons to avoid crashes before draw
+        self.btn_tac = None;
+        self.btn_form = None
+
         self.market_buttons = [];
         self.squad_buttons = [];
         self.scouting_buttons = []
@@ -785,7 +788,6 @@ class UCLManager:
 
             # 2. CHECK TABS WITH OFFSET
             for k, tab in self.tabs.items():
-                # Fix: using 'k' instead of 'key'
                 check_rect = pygame.Rect(tab.rect.x - self.tab_scroll, tab.rect.y, tab.rect.width, tab.rect.height)
                 if check_rect.collidepoint(pos):
                     self.active_tab = k;
@@ -814,14 +816,15 @@ class UCLManager:
 
             elif self.active_tab == 'SQUAD':
                 if not self.spectator_mode:
-                    if self.btn_tac.is_clicked(pos):
+                    if self.btn_tac and self.btn_tac.is_clicked(pos):
                         modes = ["Balanced", "Attack", "Park Bus", "Counter"]
                         self.my_team.current_tactic = modes[(modes.index(self.my_team.current_tactic) + 1) % 4]
-                    if self.btn_form.is_clicked(pos):
+                    if self.btn_form and self.btn_form.is_clicked(pos):
                         forms = ["4-3-3", "4-4-2", "3-5-2"]
                         self.my_team.current_formation = forms[(forms.index(self.my_team.current_formation) + 1) % 3]
                         self.my_team._cached_rating = None
-                    if self.btn_sell.is_clicked(pos): self.sell_player()
+                    # FIX: CHECK IF btn_sell EXISTS
+                    if self.btn_sell and self.btn_sell.is_clicked(pos): self.sell_player()
                     for btn in self.squad_buttons:
                         if btn.is_clicked(pos):
                             if self.selected_player_idx is None:

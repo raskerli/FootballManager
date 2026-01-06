@@ -1,0 +1,4041 @@
+[
+    {
+        "name": "Real Madrid",
+        "budget": 450,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Courtois",
+                "pos": "GK",
+                "ovr": 91,
+                "value": 80,
+                "age": 33
+            },
+            {
+                "name": "Mendy",
+                "pos": "LB",
+                "ovr": 84,
+                "value": 45,
+                "age": 30
+            },
+            {
+                "name": "Rudiger",
+                "pos": "CB",
+                "ovr": 89,
+                "value": 65,
+                "age": 32
+            },
+            {
+                "name": "Militao",
+                "pos": "CB",
+                "ovr": 87,
+                "value": 75,
+                "age": 27
+            },
+            {
+                "name": "Carvajal",
+                "pos": "RB",
+                "ovr": 86,
+                "value": 35,
+                "age": 33
+            },
+            {
+                "name": "Tchouameni",
+                "pos": "CDM",
+                "ovr": 87,
+                "value": 90,
+                "age": 25
+            },
+            {
+                "name": "Valverde",
+                "pos": "CM",
+                "ovr": 90,
+                "value": 120,
+                "age": 27
+            },
+            {
+                "name": "Bellingham",
+                "pos": "CAM",
+                "ovr": 93,
+                "value": 190,
+                "age": 22
+            },
+            {
+                "name": "Vinicius",
+                "pos": "LW",
+                "ovr": 93,
+                "value": 210,
+                "age": 25
+            },
+            {
+                "name": "Mbappe",
+                "pos": "ST",
+                "ovr": 94,
+                "value": 230,
+                "age": 27
+            },
+            {
+                "name": "Rodrygo",
+                "pos": "RW",
+                "ovr": 88,
+                "value": 100,
+                "age": 24
+            },
+            {
+                "name": "Camavinga",
+                "pos": "CDM",
+                "ovr": 87,
+                "value": 95,
+                "age": 23
+            },
+            {
+                "name": "Arda Guler",
+                "pos": "CAM",
+                "ovr": 84,
+                "value": 60,
+                "age": 20
+            },
+            {
+                "name": "Brahim",
+                "pos": "RW",
+                "ovr": 84,
+                "value": 55,
+                "age": 26
+            },
+            {
+                "name": "Alaba",
+                "pos": "CB",
+                "ovr": 85,
+                "value": 40,
+                "age": 33
+            }
+        ]
+    },
+    {
+        "name": "Man City",
+        "budget": 400,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Ederson",
+                "pos": "GK",
+                "ovr": 89,
+                "value": 70,
+                "age": 32
+            },
+            {
+                "name": "Gvardiol",
+                "pos": "LB",
+                "ovr": 87,
+                "value": 90,
+                "age": 23
+            },
+            {
+                "name": "Dias",
+                "pos": "CB",
+                "ovr": 89,
+                "value": 95,
+                "age": 28
+            },
+            {
+                "name": "Akanji",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 60,
+                "age": 30
+            },
+            {
+                "name": "Walker",
+                "pos": "RB",
+                "ovr": 84,
+                "value": 20,
+                "age": 35
+            },
+            {
+                "name": "Rodri",
+                "pos": "CDM",
+                "ovr": 93,
+                "value": 130,
+                "age": 29
+            },
+            {
+                "name": "De Bruyne",
+                "pos": "CM",
+                "ovr": 90,
+                "value": 50,
+                "age": 34
+            },
+            {
+                "name": "B. Silva",
+                "pos": "CM",
+                "ovr": 88,
+                "value": 70,
+                "age": 31
+            },
+            {
+                "name": "Foden",
+                "pos": "LW",
+                "ovr": 90,
+                "value": 140,
+                "age": 25
+            },
+            {
+                "name": "Haaland",
+                "pos": "ST",
+                "ovr": 94,
+                "value": 220,
+                "age": 25
+            },
+            {
+                "name": "Savinho",
+                "pos": "RW",
+                "ovr": 85,
+                "value": 60,
+                "age": 21
+            },
+            {
+                "name": "Doku",
+                "pos": "LW",
+                "ovr": 85,
+                "value": 65,
+                "age": 23
+            },
+            {
+                "name": "Grealish",
+                "pos": "LW",
+                "ovr": 85,
+                "value": 55,
+                "age": 30
+            },
+            {
+                "name": "Stones",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 50,
+                "age": 31
+            },
+            {
+                "name": "Lewis",
+                "pos": "RB",
+                "ovr": 82,
+                "value": 45,
+                "age": 21
+            }
+        ]
+    },
+    {
+        "name": "Bayern",
+        "budget": 250,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Neuer",
+                "pos": "GK",
+                "ovr": 86,
+                "value": 15,
+                "age": 39
+            },
+            {
+                "name": "Davies",
+                "pos": "LB",
+                "ovr": 87,
+                "value": 70,
+                "age": 25
+            },
+            {
+                "name": "Upamecano",
+                "pos": "CB",
+                "ovr": 85,
+                "value": 50,
+                "age": 27
+            },
+            {
+                "name": "Kim",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 60,
+                "age": 29
+            },
+            {
+                "name": "Kimmich",
+                "pos": "RB",
+                "ovr": 88,
+                "value": 65,
+                "age": 30
+            },
+            {
+                "name": "Palhinha",
+                "pos": "CDM",
+                "ovr": 86,
+                "value": 55,
+                "age": 30
+            },
+            {
+                "name": "Musiala",
+                "pos": "CAM",
+                "ovr": 91,
+                "value": 150,
+                "age": 22
+            },
+            {
+                "name": "Gnabry",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 40,
+                "age": 30
+            },
+            {
+                "name": "Kane",
+                "pos": "ST",
+                "ovr": 92,
+                "value": 110,
+                "age": 32
+            },
+            {
+                "name": "Olise",
+                "pos": "RW",
+                "ovr": 86,
+                "value": 80,
+                "age": 24
+            },
+            {
+                "name": "Pavlovic",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 45,
+                "age": 21
+            },
+            {
+                "name": "Sane",
+                "pos": "RW",
+                "ovr": 85,
+                "value": 50,
+                "age": 29
+            },
+            {
+                "name": "Coman",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 45,
+                "age": 29
+            },
+            {
+                "name": "Tel",
+                "pos": "ST",
+                "ovr": 79,
+                "value": 25,
+                "age": 20
+            },
+            {
+                "name": "Goretzka",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 35,
+                "age": 30
+            }
+        ]
+    },
+    {
+        "name": "Liverpool",
+        "budget": 220,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Alisson",
+                "pos": "GK",
+                "ovr": 90,
+                "value": 80,
+                "age": 33
+            },
+            {
+                "name": "Robertson",
+                "pos": "LB",
+                "ovr": 85,
+                "value": 40,
+                "age": 31
+            },
+            {
+                "name": "Van Dijk",
+                "pos": "CB",
+                "ovr": 89,
+                "value": 50,
+                "age": 34
+            },
+            {
+                "name": "Konate",
+                "pos": "CB",
+                "ovr": 87,
+                "value": 70,
+                "age": 26
+            },
+            {
+                "name": "Alexander-Arnold",
+                "pos": "RB",
+                "ovr": 88,
+                "value": 95,
+                "age": 27
+            },
+            {
+                "name": "Mac Allister",
+                "pos": "CM",
+                "ovr": 87,
+                "value": 80,
+                "age": 27
+            },
+            {
+                "name": "Szoboszlai",
+                "pos": "CAM",
+                "ovr": 86,
+                "value": 85,
+                "age": 25
+            },
+            {
+                "name": "Diaz",
+                "pos": "LW",
+                "ovr": 87,
+                "value": 90,
+                "age": 28
+            },
+            {
+                "name": "Nunez",
+                "pos": "ST",
+                "ovr": 85,
+                "value": 75,
+                "age": 26
+            },
+            {
+                "name": "Salah",
+                "pos": "RW",
+                "ovr": 89,
+                "value": 70,
+                "age": 33
+            },
+            {
+                "name": "Gravenberch",
+                "pos": "CDM",
+                "ovr": 85,
+                "value": 60,
+                "age": 23
+            },
+            {
+                "name": "Jota",
+                "pos": "ST",
+                "ovr": 85,
+                "value": 55,
+                "age": 29
+            },
+            {
+                "name": "Gakpo",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 50,
+                "age": 26
+            },
+            {
+                "name": "Jones",
+                "pos": "CM",
+                "ovr": 82,
+                "value": 40,
+                "age": 24
+            },
+            {
+                "name": "Quansah",
+                "pos": "CB",
+                "ovr": 79,
+                "value": 25,
+                "age": 22
+            }
+        ]
+    },
+    {
+        "name": "Paris",
+        "budget": 300,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Donnarumma",
+                "pos": "GK",
+                "ovr": 89,
+                "value": 85,
+                "age": 26
+            },
+            {
+                "name": "Mendes",
+                "pos": "LB",
+                "ovr": 86,
+                "value": 75,
+                "age": 23
+            },
+            {
+                "name": "Marquinhos",
+                "pos": "CB",
+                "ovr": 87,
+                "value": 60,
+                "age": 31
+            },
+            {
+                "name": "Pacho",
+                "pos": "CB",
+                "ovr": 83,
+                "value": 50,
+                "age": 24
+            },
+            {
+                "name": "Hakimi",
+                "pos": "RB",
+                "ovr": 88,
+                "value": 90,
+                "age": 27
+            },
+            {
+                "name": "Vitinha",
+                "pos": "CM",
+                "ovr": 87,
+                "value": 80,
+                "age": 25
+            },
+            {
+                "name": "Neves",
+                "pos": "CDM",
+                "ovr": 85,
+                "value": 85,
+                "age": 21
+            },
+            {
+                "name": "Barcola",
+                "pos": "LW",
+                "ovr": 86,
+                "value": 95,
+                "age": 23
+            },
+            {
+                "name": "Ramos",
+                "pos": "ST",
+                "ovr": 84,
+                "value": 65,
+                "age": 24
+            },
+            {
+                "name": "Dembele",
+                "pos": "RW",
+                "ovr": 88,
+                "value": 80,
+                "age": 28
+            },
+            {
+                "name": "Zaire-Emery",
+                "pos": "CM",
+                "ovr": 85,
+                "value": 80,
+                "age": 19
+            },
+            {
+                "name": "Kolo Muani",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 50,
+                "age": 27
+            },
+            {
+                "name": "Doue",
+                "pos": "LW",
+                "ovr": 80,
+                "value": 40,
+                "age": 20
+            },
+            {
+                "name": "Ruiz",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 45,
+                "age": 29
+            },
+            {
+                "name": "Safonov",
+                "pos": "GK",
+                "ovr": 81,
+                "value": 20,
+                "age": 26
+            }
+        ]
+    },
+    {
+        "name": "Inter",
+        "budget": 190,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Sommer",
+                "pos": "GK",
+                "ovr": 85,
+                "value": 15,
+                "age": 37
+            },
+            {
+                "name": "Dimarco",
+                "pos": "LB",
+                "ovr": 87,
+                "value": 70,
+                "age": 28
+            },
+            {
+                "name": "Bastoni",
+                "pos": "CB",
+                "ovr": 88,
+                "value": 90,
+                "age": 26
+            },
+            {
+                "name": "Pavard",
+                "pos": "CB",
+                "ovr": 85,
+                "value": 50,
+                "age": 29
+            },
+            {
+                "name": "Dumfries",
+                "pos": "RB",
+                "ovr": 84,
+                "value": 30,
+                "age": 29
+            },
+            {
+                "name": "Calhanoglu",
+                "pos": "CDM",
+                "ovr": 88,
+                "value": 55,
+                "age": 31
+            },
+            {
+                "name": "Barella",
+                "pos": "CM",
+                "ovr": 89,
+                "value": 100,
+                "age": 28
+            },
+            {
+                "name": "Mkhitaryan",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 10,
+                "age": 36
+            },
+            {
+                "name": "Thuram",
+                "pos": "LW",
+                "ovr": 86,
+                "value": 80,
+                "age": 28
+            },
+            {
+                "name": "Lautaro",
+                "pos": "ST",
+                "ovr": 90,
+                "value": 120,
+                "age": 28
+            },
+            {
+                "name": "Taremi",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 25,
+                "age": 33
+            },
+            {
+                "name": "Int Youth 1",
+                "pos": "CB",
+                "ovr": 67,
+                "value": 11,
+                "age": 18
+            },
+            {
+                "name": "Int Youth 2",
+                "pos": "CM",
+                "ovr": 67,
+                "value": 13,
+                "age": 17
+            },
+            {
+                "name": "Int Youth 3",
+                "pos": "ST",
+                "ovr": 66,
+                "value": 12,
+                "age": 19
+            },
+            {
+                "name": "Int Youth 4",
+                "pos": "GK",
+                "ovr": 71,
+                "value": 14,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Chelsea",
+        "budget": 250,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Sanchez",
+                "pos": "GK",
+                "ovr": 82,
+                "value": 30,
+                "age": 28
+            },
+            {
+                "name": "Cucurella",
+                "pos": "LB",
+                "ovr": 83,
+                "value": 45,
+                "age": 27
+            },
+            {
+                "name": "Colwill",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 60,
+                "age": 22
+            },
+            {
+                "name": "Fofana",
+                "pos": "CB",
+                "ovr": 83,
+                "value": 50,
+                "age": 25
+            },
+            {
+                "name": "James",
+                "pos": "RB",
+                "ovr": 85,
+                "value": 65,
+                "age": 26
+            },
+            {
+                "name": "Caicedo",
+                "pos": "CDM",
+                "ovr": 86,
+                "value": 90,
+                "age": 24
+            },
+            {
+                "name": "Enzo",
+                "pos": "CM",
+                "ovr": 85,
+                "value": 80,
+                "age": 24
+            },
+            {
+                "name": "Palmer",
+                "pos": "CAM",
+                "ovr": 89,
+                "value": 130,
+                "age": 23
+            },
+            {
+                "name": "Neto",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 55,
+                "age": 25
+            },
+            {
+                "name": "Jackson",
+                "pos": "ST",
+                "ovr": 84,
+                "value": 60,
+                "age": 24
+            },
+            {
+                "name": "Madueke",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 50,
+                "age": 23
+            },
+            {
+                "name": "Nkunku",
+                "pos": "CAM",
+                "ovr": 85,
+                "value": 65,
+                "age": 28
+            },
+            {
+                "name": "Lavia",
+                "pos": "CDM",
+                "ovr": 81,
+                "value": 45,
+                "age": 21
+            },
+            {
+                "name": "Sancho",
+                "pos": "LW",
+                "ovr": 83,
+                "value": 40,
+                "age": 25
+            },
+            {
+                "name": "Che Youth 1",
+                "pos": "CB",
+                "ovr": 75,
+                "value": 12,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Leverkusen",
+        "budget": 150,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Hradecky",
+                "pos": "GK",
+                "ovr": 83,
+                "value": 10,
+                "age": 36
+            },
+            {
+                "name": "Grimaldo",
+                "pos": "LB",
+                "ovr": 87,
+                "value": 60,
+                "age": 30
+            },
+            {
+                "name": "Tapsoba",
+                "pos": "CB",
+                "ovr": 85,
+                "value": 55,
+                "age": 26
+            },
+            {
+                "name": "Tah",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 45,
+                "age": 29
+            },
+            {
+                "name": "Frimpong",
+                "pos": "RB",
+                "ovr": 87,
+                "value": 75,
+                "age": 25
+            },
+            {
+                "name": "Xhaka",
+                "pos": "CDM",
+                "ovr": 86,
+                "value": 30,
+                "age": 33
+            },
+            {
+                "name": "Wirtz",
+                "pos": "CAM",
+                "ovr": 90,
+                "value": 140,
+                "age": 22
+            },
+            {
+                "name": "Boniface",
+                "pos": "ST",
+                "ovr": 85,
+                "value": 65,
+                "age": 25
+            },
+            {
+                "name": "Terrier",
+                "pos": "LW",
+                "ovr": 83,
+                "value": 35,
+                "age": 28
+            },
+            {
+                "name": "Hofmann",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 20,
+                "age": 33
+            },
+            {
+                "name": "Palacios",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 50,
+                "age": 27
+            },
+            {
+                "name": "Lev Youth 1",
+                "pos": "CB",
+                "ovr": 72,
+                "value": 8,
+                "age": 18
+            },
+            {
+                "name": "Lev Youth 2",
+                "pos": "CM",
+                "ovr": 72,
+                "value": 8,
+                "age": 19
+            },
+            {
+                "name": "Lev Youth 3",
+                "pos": "ST",
+                "ovr": 74,
+                "value": 6,
+                "age": 17
+            },
+            {
+                "name": "Lev Youth 4",
+                "pos": "GK",
+                "ovr": 74,
+                "value": 6,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Arsenal",
+        "budget": 230,
+        "pot": 1,
+        "squad": [
+            {
+                "name": "Raya",
+                "pos": "GK",
+                "ovr": 87,
+                "value": 60,
+                "age": 30
+            },
+            {
+                "name": "Calafiori",
+                "pos": "LB",
+                "ovr": 84,
+                "value": 60,
+                "age": 23
+            },
+            {
+                "name": "Gabriel",
+                "pos": "CB",
+                "ovr": 88,
+                "value": 80,
+                "age": 28
+            },
+            {
+                "name": "Saliba",
+                "pos": "CB",
+                "ovr": 89,
+                "value": 100,
+                "age": 24
+            },
+            {
+                "name": "White",
+                "pos": "RB",
+                "ovr": 86,
+                "value": 65,
+                "age": 28
+            },
+            {
+                "name": "Rice",
+                "pos": "CDM",
+                "ovr": 89,
+                "value": 115,
+                "age": 26
+            },
+            {
+                "name": "Odegaard",
+                "pos": "CAM",
+                "ovr": 90,
+                "value": 110,
+                "age": 27
+            },
+            {
+                "name": "Martinelli",
+                "pos": "LW",
+                "ovr": 86,
+                "value": 85,
+                "age": 24
+            },
+            {
+                "name": "Havertz",
+                "pos": "ST",
+                "ovr": 86,
+                "value": 80,
+                "age": 26
+            },
+            {
+                "name": "Saka",
+                "pos": "RW",
+                "ovr": 90,
+                "value": 140,
+                "age": 24
+            },
+            {
+                "name": "Merino",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 45,
+                "age": 29
+            },
+            {
+                "name": "Trossard",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 45,
+                "age": 31
+            },
+            {
+                "name": "Jesus",
+                "pos": "ST",
+                "ovr": 84,
+                "value": 50,
+                "age": 28
+            },
+            {
+                "name": "Timber",
+                "pos": "DF",
+                "ovr": 83,
+                "value": 45,
+                "age": 24
+            },
+            {
+                "name": "Ars Youth 1",
+                "pos": "CB",
+                "ovr": 69,
+                "value": 14,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Barcelona",
+        "budget": 160,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Ter Stegen",
+                "pos": "GK",
+                "ovr": 88,
+                "value": 45,
+                "age": 33
+            },
+            {
+                "name": "Balde",
+                "pos": "LB",
+                "ovr": 85,
+                "value": 65,
+                "age": 22
+            },
+            {
+                "name": "Cubarsi",
+                "pos": "CB",
+                "ovr": 83,
+                "value": 75,
+                "age": 18
+            },
+            {
+                "name": "Araujo",
+                "pos": "CB",
+                "ovr": 88,
+                "value": 95,
+                "age": 26
+            },
+            {
+                "name": "Kounde",
+                "pos": "RB",
+                "ovr": 87,
+                "value": 85,
+                "age": 27
+            },
+            {
+                "name": "Pedri",
+                "pos": "CM",
+                "ovr": 89,
+                "value": 120,
+                "age": 23
+            },
+            {
+                "name": "Olmo",
+                "pos": "CAM",
+                "ovr": 88,
+                "value": 85,
+                "age": 27
+            },
+            {
+                "name": "Raphinha",
+                "pos": "LW",
+                "ovr": 87,
+                "value": 75,
+                "age": 29
+            },
+            {
+                "name": "Lewandowski",
+                "pos": "ST",
+                "ovr": 88,
+                "value": 30,
+                "age": 37
+            },
+            {
+                "name": "Yamal",
+                "pos": "RW",
+                "ovr": 90,
+                "value": 160,
+                "age": 18
+            },
+            {
+                "name": "Gavi",
+                "pos": "CDM",
+                "ovr": 87,
+                "value": 110,
+                "age": 21
+            },
+            {
+                "name": "F. De Jong",
+                "pos": "CM",
+                "ovr": 86,
+                "value": 70,
+                "age": 28
+            },
+            {
+                "name": "Ferran",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 40,
+                "age": 25
+            },
+            {
+                "name": "Christensen",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 40,
+                "age": 29
+            },
+            {
+                "name": "Fermin",
+                "pos": "CAM",
+                "ovr": 81,
+                "value": 55,
+                "age": 22
+            }
+        ]
+    },
+    {
+        "name": "Atleti",
+        "budget": 180,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Oblak",
+                "pos": "GK",
+                "ovr": 88,
+                "value": 45,
+                "age": 32
+            },
+            {
+                "name": "Lino",
+                "pos": "LB",
+                "ovr": 83,
+                "value": 45,
+                "age": 26
+            },
+            {
+                "name": "Le Normand",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 50,
+                "age": 29
+            },
+            {
+                "name": "Gimenez",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 35,
+                "age": 30
+            },
+            {
+                "name": "Molina",
+                "pos": "RB",
+                "ovr": 82,
+                "value": 35,
+                "age": 27
+            },
+            {
+                "name": "De Paul",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 40,
+                "age": 31
+            },
+            {
+                "name": "Griezmann",
+                "pos": "CAM",
+                "ovr": 88,
+                "value": 35,
+                "age": 34
+            },
+            {
+                "name": "Alvarez",
+                "pos": "ST",
+                "ovr": 88,
+                "value": 100,
+                "age": 25
+            },
+            {
+                "name": "Sorloth",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 40,
+                "age": 30
+            },
+            {
+                "name": "Gallagher",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 50,
+                "age": 25
+            },
+            {
+                "name": "Llorente",
+                "pos": "RM",
+                "ovr": 83,
+                "value": 30,
+                "age": 30
+            },
+            {
+                "name": "Atl Youth 1",
+                "pos": "CB",
+                "ovr": 66,
+                "value": 8,
+                "age": 18
+            },
+            {
+                "name": "Atl Youth 2",
+                "pos": "CM",
+                "ovr": 67,
+                "value": 5,
+                "age": 19
+            },
+            {
+                "name": "Atl Youth 3",
+                "pos": "ST",
+                "ovr": 73,
+                "value": 12,
+                "age": 18
+            },
+            {
+                "name": "Atl Youth 4",
+                "pos": "GK",
+                "ovr": 68,
+                "value": 7,
+                "age": 17
+            }
+        ]
+    },
+    {
+        "name": "Juventus",
+        "budget": 150,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Di Gregorio",
+                "pos": "GK",
+                "ovr": 83,
+                "value": 30,
+                "age": 28
+            },
+            {
+                "name": "Cambiaso",
+                "pos": "LB",
+                "ovr": 84,
+                "value": 45,
+                "age": 25
+            },
+            {
+                "name": "Bremer",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 65,
+                "age": 28
+            },
+            {
+                "name": "Gatti",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 30,
+                "age": 27
+            },
+            {
+                "name": "Kalulu",
+                "pos": "RB",
+                "ovr": 82,
+                "value": 35,
+                "age": 25
+            },
+            {
+                "name": "Koopmeiners",
+                "pos": "CAM",
+                "ovr": 86,
+                "value": 70,
+                "age": 27
+            },
+            {
+                "name": "Yildiz",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 60,
+                "age": 20
+            },
+            {
+                "name": "Vlahovic",
+                "pos": "ST",
+                "ovr": 86,
+                "value": 80,
+                "age": 25
+            },
+            {
+                "name": "Conceicao",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 40,
+                "age": 23
+            },
+            {
+                "name": "Thuram",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 45,
+                "age": 24
+            },
+            {
+                "name": "Locatelli",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 40,
+                "age": 27
+            },
+            {
+                "name": "Juv Youth 1",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 12,
+                "age": 18
+            },
+            {
+                "name": "Juv Youth 2",
+                "pos": "CM",
+                "ovr": 74,
+                "value": 12,
+                "age": 19
+            },
+            {
+                "name": "Juv Youth 3",
+                "pos": "ST",
+                "ovr": 68,
+                "value": 12,
+                "age": 17
+            },
+            {
+                "name": "Juv Youth 4",
+                "pos": "GK",
+                "ovr": 67,
+                "value": 13,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Atalanta",
+        "budget": 100,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Carnesecchi",
+                "pos": "GK",
+                "ovr": 82,
+                "value": 35,
+                "age": 25
+            },
+            {
+                "name": "Ruggeri",
+                "pos": "LB",
+                "ovr": 81,
+                "value": 30,
+                "age": 23
+            },
+            {
+                "name": "Hien",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 30,
+                "age": 26
+            },
+            {
+                "name": "Scalvini",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 55,
+                "age": 22
+            },
+            {
+                "name": "Bellanova",
+                "pos": "RB",
+                "ovr": 82,
+                "value": 35,
+                "age": 25
+            },
+            {
+                "name": "Ederson",
+                "pos": "CDM",
+                "ovr": 85,
+                "value": 60,
+                "age": 26
+            },
+            {
+                "name": "Lookman",
+                "pos": "LW",
+                "ovr": 86,
+                "value": 70,
+                "age": 28
+            },
+            {
+                "name": "Retegui",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 40,
+                "age": 26
+            },
+            {
+                "name": "De Ketelaere",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 45,
+                "age": 24
+            },
+            {
+                "name": "Pasalic",
+                "pos": "CAM",
+                "ovr": 81,
+                "value": 20,
+                "age": 30
+            },
+            {
+                "name": "Zappacosta",
+                "pos": "RM",
+                "ovr": 80,
+                "value": 10,
+                "age": 33
+            },
+            {
+                "name": "Ata Youth 1",
+                "pos": "CB",
+                "ovr": 74,
+                "value": 6,
+                "age": 17
+            },
+            {
+                "name": "Ata Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 10,
+                "age": 18
+            },
+            {
+                "name": "Ata Youth 3",
+                "pos": "ST",
+                "ovr": 70,
+                "value": 15,
+                "age": 19
+            },
+            {
+                "name": "Ata Youth 4",
+                "pos": "GK",
+                "ovr": 71,
+                "value": 5,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Napoli",
+        "budget": 140,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Meret",
+                "pos": "GK",
+                "ovr": 83,
+                "value": 30,
+                "age": 28
+            },
+            {
+                "name": "Olivera",
+                "pos": "LB",
+                "ovr": 82,
+                "value": 30,
+                "age": 28
+            },
+            {
+                "name": "Buongiorno",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 50,
+                "age": 26
+            },
+            {
+                "name": "Rrahmani",
+                "pos": "CB",
+                "ovr": 83,
+                "value": 30,
+                "age": 31
+            },
+            {
+                "name": "Di Lorenzo",
+                "pos": "RB",
+                "ovr": 85,
+                "value": 40,
+                "age": 32
+            },
+            {
+                "name": "Lobotka",
+                "pos": "CDM",
+                "ovr": 85,
+                "value": 45,
+                "age": 31
+            },
+            {
+                "name": "McTominay",
+                "pos": "CM",
+                "ovr": 82,
+                "value": 35,
+                "age": 29
+            },
+            {
+                "name": "Kvaratskhelia",
+                "pos": "LW",
+                "ovr": 88,
+                "value": 110,
+                "age": 24
+            },
+            {
+                "name": "Lukaku",
+                "pos": "ST",
+                "ovr": 84,
+                "value": 35,
+                "age": 32
+            },
+            {
+                "name": "Politano",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 25,
+                "age": 32
+            },
+            {
+                "name": "Anguissa",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 35,
+                "age": 30
+            },
+            {
+                "name": "Nap Youth 1",
+                "pos": "CB",
+                "ovr": 70,
+                "value": 6,
+                "age": 18
+            },
+            {
+                "name": "Nap Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 10,
+                "age": 17
+            },
+            {
+                "name": "Nap Youth 3",
+                "pos": "ST",
+                "ovr": 70,
+                "value": 10,
+                "age": 19
+            },
+            {
+                "name": "Nap Youth 4",
+                "pos": "GK",
+                "ovr": 69,
+                "value": 13,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Tottenham",
+        "budget": 180,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Vicario",
+                "pos": "GK",
+                "ovr": 86,
+                "value": 55,
+                "age": 29
+            },
+            {
+                "name": "Udogie",
+                "pos": "LB",
+                "ovr": 85,
+                "value": 65,
+                "age": 23
+            },
+            {
+                "name": "Van de Ven",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 75,
+                "age": 24
+            },
+            {
+                "name": "Romero",
+                "pos": "CB",
+                "ovr": 87,
+                "value": 80,
+                "age": 27
+            },
+            {
+                "name": "Porro",
+                "pos": "RB",
+                "ovr": 85,
+                "value": 60,
+                "age": 26
+            },
+            {
+                "name": "Maddison",
+                "pos": "CAM",
+                "ovr": 86,
+                "value": 70,
+                "age": 29
+            },
+            {
+                "name": "Son",
+                "pos": "LW",
+                "ovr": 88,
+                "value": 50,
+                "age": 33
+            },
+            {
+                "name": "Solanke",
+                "pos": "ST",
+                "ovr": 84,
+                "value": 65,
+                "age": 28
+            },
+            {
+                "name": "Johnson",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 50,
+                "age": 24
+            },
+            {
+                "name": "Kulusevski",
+                "pos": "RW",
+                "ovr": 84,
+                "value": 55,
+                "age": 25
+            },
+            {
+                "name": "Bissouma",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 40,
+                "age": 29
+            },
+            {
+                "name": "Tot Youth 1",
+                "pos": "CB",
+                "ovr": 74,
+                "value": 6,
+                "age": 18
+            },
+            {
+                "name": "Tot Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 15,
+                "age": 17
+            },
+            {
+                "name": "Tot Youth 3",
+                "pos": "ST",
+                "ovr": 71,
+                "value": 7,
+                "age": 19
+            },
+            {
+                "name": "Tot Youth 4",
+                "pos": "GK",
+                "ovr": 69,
+                "value": 14,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Newcastle",
+        "budget": 170,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Pope",
+                "pos": "GK",
+                "ovr": 84,
+                "value": 30,
+                "age": 33
+            },
+            {
+                "name": "Hall",
+                "pos": "LB",
+                "ovr": 81,
+                "value": 35,
+                "age": 21
+            },
+            {
+                "name": "Botman",
+                "pos": "CB",
+                "ovr": 85,
+                "value": 55,
+                "age": 25
+            },
+            {
+                "name": "Schar",
+                "pos": "CB",
+                "ovr": 83,
+                "value": 20,
+                "age": 34
+            },
+            {
+                "name": "Livramento",
+                "pos": "RB",
+                "ovr": 82,
+                "value": 40,
+                "age": 23
+            },
+            {
+                "name": "Guimaraes",
+                "pos": "CDM",
+                "ovr": 87,
+                "value": 90,
+                "age": 28
+            },
+            {
+                "name": "Gordon",
+                "pos": "LW",
+                "ovr": 85,
+                "value": 75,
+                "age": 24
+            },
+            {
+                "name": "Isak",
+                "pos": "ST",
+                "ovr": 87,
+                "value": 100,
+                "age": 26
+            },
+            {
+                "name": "Barnes",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 40,
+                "age": 28
+            },
+            {
+                "name": "Joelinton",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 40,
+                "age": 29
+            },
+            {
+                "name": "Tonali",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 55,
+                "age": 25
+            },
+            {
+                "name": "New Youth 1",
+                "pos": "CB",
+                "ovr": 67,
+                "value": 15,
+                "age": 18
+            },
+            {
+                "name": "New Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 15,
+                "age": 17
+            },
+            {
+                "name": "New Youth 3",
+                "pos": "ST",
+                "ovr": 68,
+                "value": 14,
+                "age": 19
+            },
+            {
+                "name": "New Youth 4",
+                "pos": "GK",
+                "ovr": 74,
+                "value": 7,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "B. Dortmund",
+        "budget": 110,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Kobel",
+                "pos": "GK",
+                "ovr": 88,
+                "value": 65,
+                "age": 28
+            },
+            {
+                "name": "Schlotterbeck",
+                "pos": "CB",
+                "ovr": 86,
+                "value": 55,
+                "age": 26
+            },
+            {
+                "name": "Anton",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 35,
+                "age": 29
+            },
+            {
+                "name": "Couto",
+                "pos": "RB",
+                "ovr": 82,
+                "value": 35,
+                "age": 23
+            },
+            {
+                "name": "Ryerson",
+                "pos": "LB",
+                "ovr": 81,
+                "value": 25,
+                "age": 28
+            },
+            {
+                "name": "Brandt",
+                "pos": "CAM",
+                "ovr": 86,
+                "value": 55,
+                "age": 29
+            },
+            {
+                "name": "Gittens",
+                "pos": "LW",
+                "ovr": 82,
+                "value": 45,
+                "age": 21
+            },
+            {
+                "name": "Guirassy",
+                "pos": "ST",
+                "ovr": 85,
+                "value": 45,
+                "age": 29
+            },
+            {
+                "name": "Malen",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 40,
+                "age": 26
+            },
+            {
+                "name": "Sabitzer",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 30,
+                "age": 31
+            },
+            {
+                "name": "Can",
+                "pos": "CDM",
+                "ovr": 81,
+                "value": 15,
+                "age": 31
+            },
+            {
+                "name": "B.  Youth 1",
+                "pos": "CB",
+                "ovr": 66,
+                "value": 8,
+                "age": 18
+            },
+            {
+                "name": "B.  Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 12,
+                "age": 17
+            },
+            {
+                "name": "B.  Youth 3",
+                "pos": "ST",
+                "ovr": 71,
+                "value": 6,
+                "age": 19
+            },
+            {
+                "name": "B.  Youth 4",
+                "pos": "GK",
+                "ovr": 66,
+                "value": 6,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Benfica",
+        "budget": 120,
+        "pot": 2,
+        "squad": [
+            {
+                "name": "Trubin",
+                "pos": "GK",
+                "ovr": 83,
+                "value": 40,
+                "age": 24
+            },
+            {
+                "name": "Carreras",
+                "pos": "LB",
+                "ovr": 80,
+                "value": 25,
+                "age": 22
+            },
+            {
+                "name": "A. Silva",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 60,
+                "age": 22
+            },
+            {
+                "name": "Otamendi",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 10,
+                "age": 37
+            },
+            {
+                "name": "Bah",
+                "pos": "RB",
+                "ovr": 81,
+                "value": 30,
+                "age": 28
+            },
+            {
+                "name": "Kokcu",
+                "pos": "CM",
+                "ovr": 84,
+                "value": 50,
+                "age": 25
+            },
+            {
+                "name": "Di Maria",
+                "pos": "LW",
+                "ovr": 84,
+                "value": 15,
+                "age": 37
+            },
+            {
+                "name": "Pavlidis",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 35,
+                "age": 27
+            },
+            {
+                "name": "Akturkoglu",
+                "pos": "RW",
+                "ovr": 83,
+                "value": 35,
+                "age": 27
+            },
+            {
+                "name": "Florentino",
+                "pos": "CDM",
+                "ovr": 82,
+                "value": 35,
+                "age": 26
+            },
+            {
+                "name": "Rollheiser",
+                "pos": "CAM",
+                "ovr": 79,
+                "value": 20,
+                "age": 25
+            },
+            {
+                "name": "Ben Youth 1",
+                "pos": "CB",
+                "ovr": 71,
+                "value": 9,
+                "age": 18
+            },
+            {
+                "name": "Ben Youth 2",
+                "pos": "CM",
+                "ovr": 67,
+                "value": 9,
+                "age": 17
+            },
+            {
+                "name": "Ben Youth 3",
+                "pos": "ST",
+                "ovr": 65,
+                "value": 6,
+                "age": 19
+            },
+            {
+                "name": "Ben Youth 4",
+                "pos": "GK",
+                "ovr": 67,
+                "value": 9,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Sporting CP",
+        "budget": 120,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Israel",
+                "pos": "GK",
+                "ovr": 79,
+                "value": 15,
+                "age": 25
+            },
+            {
+                "name": "N. Santos",
+                "pos": "LB",
+                "ovr": 82,
+                "value": 30,
+                "age": 30
+            },
+            {
+                "name": "Inacio",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 55,
+                "age": 24
+            },
+            {
+                "name": "Diomande",
+                "pos": "CB",
+                "ovr": 83,
+                "value": 50,
+                "age": 22
+            },
+            {
+                "name": "Debast",
+                "pos": "RB",
+                "ovr": 81,
+                "value": 35,
+                "age": 22
+            },
+            {
+                "name": "Hjulmand",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 45,
+                "age": 26
+            },
+            {
+                "name": "Goncalves",
+                "pos": "CAM",
+                "ovr": 84,
+                "value": 50,
+                "age": 27
+            },
+            {
+                "name": "Gyokeres",
+                "pos": "ST",
+                "ovr": 89,
+                "value": 100,
+                "age": 27
+            },
+            {
+                "name": "Trincao",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 35,
+                "age": 26
+            },
+            {
+                "name": "Edwards",
+                "pos": "LW",
+                "ovr": 81,
+                "value": 30,
+                "age": 27
+            },
+            {
+                "name": "Braganca",
+                "pos": "CM",
+                "ovr": 80,
+                "value": 20,
+                "age": 26
+            },
+            {
+                "name": "Spo Youth 1",
+                "pos": "CB",
+                "ovr": 75,
+                "value": 10,
+                "age": 18
+            },
+            {
+                "name": "Spo Youth 2",
+                "pos": "CM",
+                "ovr": 74,
+                "value": 9,
+                "age": 17
+            },
+            {
+                "name": "Spo Youth 3",
+                "pos": "ST",
+                "ovr": 66,
+                "value": 13,
+                "age": 19
+            },
+            {
+                "name": "Spo Youth 4",
+                "pos": "GK",
+                "ovr": 65,
+                "value": 6,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "PSV",
+        "budget": 90,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Benitez",
+                "pos": "GK",
+                "ovr": 81,
+                "value": 20,
+                "age": 32
+            },
+            {
+                "name": "Dest",
+                "pos": "LB",
+                "ovr": 80,
+                "value": 25,
+                "age": 25
+            },
+            {
+                "name": "Boscagli",
+                "pos": "CB",
+                "ovr": 81,
+                "value": 30,
+                "age": 28
+            },
+            {
+                "name": "Flamingo",
+                "pos": "CB",
+                "ovr": 78,
+                "value": 15,
+                "age": 23
+            },
+            {
+                "name": "Karsdorp",
+                "pos": "RB",
+                "ovr": 79,
+                "value": 10,
+                "age": 30
+            },
+            {
+                "name": "Veerman",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 45,
+                "age": 27
+            },
+            {
+                "name": "Lang",
+                "pos": "LW",
+                "ovr": 82,
+                "value": 30,
+                "age": 26
+            },
+            {
+                "name": "De Jong",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 15,
+                "age": 35
+            },
+            {
+                "name": "Bakayoko",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 45,
+                "age": 22
+            },
+            {
+                "name": "Schouten",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 40,
+                "age": 28
+            },
+            {
+                "name": "Til",
+                "pos": "CAM",
+                "ovr": 80,
+                "value": 20,
+                "age": 28
+            },
+            {
+                "name": "PSV Youth 1",
+                "pos": "CB",
+                "ovr": 70,
+                "value": 5,
+                "age": 18
+            },
+            {
+                "name": "PSV Youth 2",
+                "pos": "CM",
+                "ovr": 75,
+                "value": 6,
+                "age": 17
+            },
+            {
+                "name": "PSV Youth 3",
+                "pos": "ST",
+                "ovr": 73,
+                "value": 10,
+                "age": 19
+            },
+            {
+                "name": "PSV Youth 4",
+                "pos": "GK",
+                "ovr": 65,
+                "value": 5,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Feyenoord",
+        "budget": 80,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Wellenreuther",
+                "pos": "GK",
+                "ovr": 79,
+                "value": 10,
+                "age": 30
+            },
+            {
+                "name": "Bueno",
+                "pos": "LB",
+                "ovr": 79,
+                "value": 15,
+                "age": 23
+            },
+            {
+                "name": "Hancko",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 45,
+                "age": 28
+            },
+            {
+                "name": "Beelen",
+                "pos": "CB",
+                "ovr": 79,
+                "value": 15,
+                "age": 24
+            },
+            {
+                "name": "Lotomba",
+                "pos": "RB",
+                "ovr": 79,
+                "value": 15,
+                "age": 27
+            },
+            {
+                "name": "Timber",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 45,
+                "age": 24
+            },
+            {
+                "name": "Paixao",
+                "pos": "LW",
+                "ovr": 80,
+                "value": 25,
+                "age": 25
+            },
+            {
+                "name": "Gimenez",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 45,
+                "age": 24
+            },
+            {
+                "name": "Stengs",
+                "pos": "RW",
+                "ovr": 81,
+                "value": 30,
+                "age": 27
+            },
+            {
+                "name": "Hwang",
+                "pos": "CDM",
+                "ovr": 81,
+                "value": 25,
+                "age": 29
+            },
+            {
+                "name": "Zerrouki",
+                "pos": "CM",
+                "ovr": 78,
+                "value": 15,
+                "age": 27
+            },
+            {
+                "name": "Fey Youth 1",
+                "pos": "CB",
+                "ovr": 75,
+                "value": 10,
+                "age": 18
+            },
+            {
+                "name": "Fey Youth 2",
+                "pos": "CM",
+                "ovr": 67,
+                "value": 13,
+                "age": 17
+            },
+            {
+                "name": "Fey Youth 3",
+                "pos": "ST",
+                "ovr": 68,
+                "value": 15,
+                "age": 19
+            },
+            {
+                "name": "Fey Youth 4",
+                "pos": "GK",
+                "ovr": 75,
+                "value": 9,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Ajax",
+        "budget": 80,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Pasveer",
+                "pos": "GK",
+                "ovr": 77,
+                "value": 5,
+                "age": 42
+            },
+            {
+                "name": "Hato",
+                "pos": "LB",
+                "ovr": 81,
+                "value": 40,
+                "age": 19
+            },
+            {
+                "name": "Sutalo",
+                "pos": "CB",
+                "ovr": 80,
+                "value": 25,
+                "age": 25
+            },
+            {
+                "name": "Baas",
+                "pos": "CB",
+                "ovr": 77,
+                "value": 10,
+                "age": 22
+            },
+            {
+                "name": "Rensch",
+                "pos": "RB",
+                "ovr": 79,
+                "value": 20,
+                "age": 22
+            },
+            {
+                "name": "Henderson",
+                "pos": "CDM",
+                "ovr": 80,
+                "value": 10,
+                "age": 35
+            },
+            {
+                "name": "Godts",
+                "pos": "LW",
+                "ovr": 77,
+                "value": 20,
+                "age": 20
+            },
+            {
+                "name": "Brobbey",
+                "pos": "ST",
+                "ovr": 81,
+                "value": 35,
+                "age": 23
+            },
+            {
+                "name": "Traore",
+                "pos": "RW",
+                "ovr": 79,
+                "value": 15,
+                "age": 30
+            },
+            {
+                "name": "Taylor",
+                "pos": "CM",
+                "ovr": 79,
+                "value": 20,
+                "age": 23
+            },
+            {
+                "name": "Klaassen",
+                "pos": "CAM",
+                "ovr": 79,
+                "value": 10,
+                "age": 32
+            },
+            {
+                "name": "Aja Youth 1",
+                "pos": "CB",
+                "ovr": 72,
+                "value": 14,
+                "age": 18
+            },
+            {
+                "name": "Aja Youth 2",
+                "pos": "CM",
+                "ovr": 69,
+                "value": 14,
+                "age": 17
+            },
+            {
+                "name": "Aja Youth 3",
+                "pos": "ST",
+                "ovr": 75,
+                "value": 10,
+                "age": 19
+            },
+            {
+                "name": "Aja Youth 4",
+                "pos": "GK",
+                "ovr": 65,
+                "value": 7,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Galatasaray",
+        "budget": 100,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Muslera",
+                "pos": "GK",
+                "ovr": 82,
+                "value": 5,
+                "age": 39
+            },
+            {
+                "name": "Jakobs",
+                "pos": "LB",
+                "ovr": 79,
+                "value": 15,
+                "age": 26
+            },
+            {
+                "name": "Sanchez",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 25,
+                "age": 29
+            },
+            {
+                "name": "Bardakci",
+                "pos": "CB",
+                "ovr": 80,
+                "value": 20,
+                "age": 31
+            },
+            {
+                "name": "Ayhan",
+                "pos": "RB",
+                "ovr": 78,
+                "value": 10,
+                "age": 31
+            },
+            {
+                "name": "Torreira",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 30,
+                "age": 29
+            },
+            {
+                "name": "Baris",
+                "pos": "LW",
+                "ovr": 80,
+                "value": 25,
+                "age": 25
+            },
+            {
+                "name": "Osimhen",
+                "pos": "ST",
+                "ovr": 88,
+                "value": 100,
+                "age": 27
+            },
+            {
+                "name": "Icardi",
+                "pos": "RW",
+                "ovr": 84,
+                "value": 25,
+                "age": 32
+            },
+            {
+                "name": "Sara",
+                "pos": "CM",
+                "ovr": 81,
+                "value": 25,
+                "age": 26
+            },
+            {
+                "name": "Mertens",
+                "pos": "CAM",
+                "ovr": 82,
+                "value": 10,
+                "age": 38
+            },
+            {
+                "name": "Gal Youth 1",
+                "pos": "CB",
+                "ovr": 72,
+                "value": 9,
+                "age": 18
+            },
+            {
+                "name": "Gal Youth 2",
+                "pos": "CM",
+                "ovr": 71,
+                "value": 9,
+                "age": 17
+            },
+            {
+                "name": "Gal Youth 3",
+                "pos": "ST",
+                "ovr": 68,
+                "value": 11,
+                "age": 19
+            },
+            {
+                "name": "Gal Youth 4",
+                "pos": "GK",
+                "ovr": 65,
+                "value": 10,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Olympiacos",
+        "budget": 70,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Tzolakis",
+                "pos": "GK",
+                "ovr": 77,
+                "value": 10,
+                "age": 23
+            },
+            {
+                "name": "Ortega",
+                "pos": "LB",
+                "ovr": 78,
+                "value": 15,
+                "age": 26
+            },
+            {
+                "name": "Carmo",
+                "pos": "CB",
+                "ovr": 80,
+                "value": 20,
+                "age": 26
+            },
+            {
+                "name": "Retsos",
+                "pos": "CB",
+                "ovr": 78,
+                "value": 10,
+                "age": 27
+            },
+            {
+                "name": "Costinha",
+                "pos": "RB",
+                "ovr": 77,
+                "value": 10,
+                "age": 25
+            },
+            {
+                "name": "Hezze",
+                "pos": "CDM",
+                "ovr": 79,
+                "value": 20,
+                "age": 24
+            },
+            {
+                "name": "Martins",
+                "pos": "LW",
+                "ovr": 80,
+                "value": 20,
+                "age": 30
+            },
+            {
+                "name": "El Kaabi",
+                "pos": "ST",
+                "ovr": 81,
+                "value": 25,
+                "age": 32
+            },
+            {
+                "name": "Rodinei",
+                "pos": "RW",
+                "ovr": 78,
+                "value": 10,
+                "age": 33
+            },
+            {
+                "name": "Chiquinho",
+                "pos": "CM",
+                "ovr": 79,
+                "value": 15,
+                "age": 30
+            },
+            {
+                "name": "Oliveira",
+                "pos": "CAM",
+                "ovr": 79,
+                "value": 15,
+                "age": 33
+            },
+            {
+                "name": "Oly Youth 1",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 8,
+                "age": 18
+            },
+            {
+                "name": "Oly Youth 2",
+                "pos": "CM",
+                "ovr": 69,
+                "value": 14,
+                "age": 17
+            },
+            {
+                "name": "Oly Youth 3",
+                "pos": "ST",
+                "ovr": 70,
+                "value": 9,
+                "age": 19
+            },
+            {
+                "name": "Oly Youth 4",
+                "pos": "GK",
+                "ovr": 70,
+                "value": 11,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Marseille",
+        "budget": 110,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Rulli",
+                "pos": "GK",
+                "ovr": 82,
+                "value": 20,
+                "age": 33
+            },
+            {
+                "name": "Merlin",
+                "pos": "LB",
+                "ovr": 80,
+                "value": 25,
+                "age": 23
+            },
+            {
+                "name": "Balerdi",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 35,
+                "age": 26
+            },
+            {
+                "name": "Brassier",
+                "pos": "CB",
+                "ovr": 80,
+                "value": 20,
+                "age": 26
+            },
+            {
+                "name": "Murillo",
+                "pos": "RB",
+                "ovr": 79,
+                "value": 15,
+                "age": 29
+            },
+            {
+                "name": "Hojbjerg",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 35,
+                "age": 30
+            },
+            {
+                "name": "Greenwood",
+                "pos": "RW",
+                "ovr": 84,
+                "value": 55,
+                "age": 24
+            },
+            {
+                "name": "Wahi",
+                "pos": "ST",
+                "ovr": 80,
+                "value": 30,
+                "age": 22
+            },
+            {
+                "name": "Henrique",
+                "pos": "LW",
+                "ovr": 79,
+                "value": 15,
+                "age": 24
+            },
+            {
+                "name": "Rabiot",
+                "pos": "CM",
+                "ovr": 83,
+                "value": 30,
+                "age": 30
+            },
+            {
+                "name": "Kone",
+                "pos": "CM",
+                "ovr": 80,
+                "value": 25,
+                "age": 23
+            },
+            {
+                "name": "Mar Youth 1",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 6,
+                "age": 18
+            },
+            {
+                "name": "Mar Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 7,
+                "age": 17
+            },
+            {
+                "name": "Mar Youth 3",
+                "pos": "ST",
+                "ovr": 71,
+                "value": 7,
+                "age": 19
+            },
+            {
+                "name": "Mar Youth 4",
+                "pos": "GK",
+                "ovr": 66,
+                "value": 14,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Monaco",
+        "budget": 100,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Kohn",
+                "pos": "GK",
+                "ovr": 80,
+                "value": 20,
+                "age": 27
+            },
+            {
+                "name": "Caio",
+                "pos": "LB",
+                "ovr": 81,
+                "value": 25,
+                "age": 28
+            },
+            {
+                "name": "Salisu",
+                "pos": "CB",
+                "ovr": 80,
+                "value": 25,
+                "age": 26
+            },
+            {
+                "name": "Kehrer",
+                "pos": "CB",
+                "ovr": 81,
+                "value": 20,
+                "age": 29
+            },
+            {
+                "name": "Vanderson",
+                "pos": "RB",
+                "ovr": 81,
+                "value": 30,
+                "age": 24
+            },
+            {
+                "name": "Zakaria",
+                "pos": "CDM",
+                "ovr": 83,
+                "value": 35,
+                "age": 29
+            },
+            {
+                "name": "Golovin",
+                "pos": "CAM",
+                "ovr": 83,
+                "value": 40,
+                "age": 29
+            },
+            {
+                "name": "Embolo",
+                "pos": "ST",
+                "ovr": 81,
+                "value": 25,
+                "age": 28
+            },
+            {
+                "name": "Akliouche",
+                "pos": "RW",
+                "ovr": 81,
+                "value": 35,
+                "age": 23
+            },
+            {
+                "name": "Ben Seghir",
+                "pos": "LW",
+                "ovr": 80,
+                "value": 35,
+                "age": 20
+            },
+            {
+                "name": "Camara",
+                "pos": "CM",
+                "ovr": 81,
+                "value": 30,
+                "age": 25
+            },
+            {
+                "name": "Mon Youth 1",
+                "pos": "CB",
+                "ovr": 70,
+                "value": 7,
+                "age": 18
+            },
+            {
+                "name": "Mon Youth 2",
+                "pos": "CM",
+                "ovr": 65,
+                "value": 7,
+                "age": 17
+            },
+            {
+                "name": "Mon Youth 3",
+                "pos": "ST",
+                "ovr": 65,
+                "value": 9,
+                "age": 19
+            },
+            {
+                "name": "Mon Youth 4",
+                "pos": "GK",
+                "ovr": 67,
+                "value": 9,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Villarreal",
+        "budget": 110,
+        "pot": 3,
+        "squad": [
+            {
+                "name": "Conde",
+                "pos": "GK",
+                "ovr": 80,
+                "value": 20,
+                "age": 27
+            },
+            {
+                "name": "Cardona",
+                "pos": "LB",
+                "ovr": 80,
+                "value": 20,
+                "age": 26
+            },
+            {
+                "name": "Bailly",
+                "pos": "CB",
+                "ovr": 80,
+                "value": 15,
+                "age": 31
+            },
+            {
+                "name": "Albiol",
+                "pos": "CB",
+                "ovr": 79,
+                "value": 5,
+                "age": 40
+            },
+            {
+                "name": "Femenia",
+                "pos": "RB",
+                "ovr": 79,
+                "value": 10,
+                "age": 34
+            },
+            {
+                "name": "Baena",
+                "pos": "CAM",
+                "ovr": 85,
+                "value": 65,
+                "age": 24
+            },
+            {
+                "name": "Pino",
+                "pos": "LW",
+                "ovr": 82,
+                "value": 40,
+                "age": 23
+            },
+            {
+                "name": "A. Perez",
+                "pos": "ST",
+                "ovr": 83,
+                "value": 30,
+                "age": 32
+            },
+            {
+                "name": "Moreno",
+                "pos": "RW",
+                "ovr": 84,
+                "value": 35,
+                "age": 33
+            },
+            {
+                "name": "Parejo",
+                "pos": "CDM",
+                "ovr": 82,
+                "value": 10,
+                "age": 36
+            },
+            {
+                "name": "Gueye",
+                "pos": "CM",
+                "ovr": 80,
+                "value": 15,
+                "age": 26
+            },
+            {
+                "name": "Vil Youth 1",
+                "pos": "CB",
+                "ovr": 74,
+                "value": 14,
+                "age": 18
+            },
+            {
+                "name": "Vil Youth 2",
+                "pos": "CM",
+                "ovr": 74,
+                "value": 8,
+                "age": 17
+            },
+            {
+                "name": "Vil Youth 3",
+                "pos": "ST",
+                "ovr": 66,
+                "value": 11,
+                "age": 19
+            },
+            {
+                "name": "Vil Youth 4",
+                "pos": "GK",
+                "ovr": 65,
+                "value": 9,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Athletic Club",
+        "budget": 120,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Simon",
+                "pos": "GK",
+                "ovr": 87,
+                "value": 60,
+                "age": 28
+            },
+            {
+                "name": "Yuri",
+                "pos": "LB",
+                "ovr": 81,
+                "value": 10,
+                "age": 35
+            },
+            {
+                "name": "Vivian",
+                "pos": "CB",
+                "ovr": 84,
+                "value": 50,
+                "age": 26
+            },
+            {
+                "name": "Paredes",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 35,
+                "age": 25
+            },
+            {
+                "name": "De Marcos",
+                "pos": "RB",
+                "ovr": 80,
+                "value": 5,
+                "age": 36
+            },
+            {
+                "name": "Sancet",
+                "pos": "CAM",
+                "ovr": 84,
+                "value": 55,
+                "age": 25
+            },
+            {
+                "name": "N. Williams",
+                "pos": "LW",
+                "ovr": 87,
+                "value": 110,
+                "age": 23
+            },
+            {
+                "name": "Guruzeta",
+                "pos": "ST",
+                "ovr": 82,
+                "value": 30,
+                "age": 29
+            },
+            {
+                "name": "I. Williams",
+                "pos": "RW",
+                "ovr": 84,
+                "value": 40,
+                "age": 31
+            },
+            {
+                "name": "Prados",
+                "pos": "CDM",
+                "ovr": 81,
+                "value": 30,
+                "age": 24
+            },
+            {
+                "name": "Ruiz",
+                "pos": "CM",
+                "ovr": 82,
+                "value": 35,
+                "age": 32
+            },
+            {
+                "name": "Ath Youth 1",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 13,
+                "age": 18
+            },
+            {
+                "name": "Ath Youth 2",
+                "pos": "CM",
+                "ovr": 66,
+                "value": 7,
+                "age": 17
+            },
+            {
+                "name": "Ath Youth 3",
+                "pos": "ST",
+                "ovr": 67,
+                "value": 14,
+                "age": 19
+            },
+            {
+                "name": "Ath Youth 4",
+                "pos": "GK",
+                "ovr": 75,
+                "value": 6,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Frankfurt",
+        "budget": 100,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Trapp",
+                "pos": "GK",
+                "ovr": 82,
+                "value": 15,
+                "age": 35
+            },
+            {
+                "name": "Nkounkou",
+                "pos": "LB",
+                "ovr": 79,
+                "value": 20,
+                "age": 25
+            },
+            {
+                "name": "Koch",
+                "pos": "CB",
+                "ovr": 82,
+                "value": 30,
+                "age": 29
+            },
+            {
+                "name": "Theate",
+                "pos": "CB",
+                "ovr": 81,
+                "value": 25,
+                "age": 25
+            },
+            {
+                "name": "Kristensen",
+                "pos": "RB",
+                "ovr": 80,
+                "value": 20,
+                "age": 28
+            },
+            {
+                "name": "Marmoush",
+                "pos": "ST",
+                "ovr": 85,
+                "value": 60,
+                "age": 26
+            },
+            {
+                "name": "Ekitike",
+                "pos": "RW",
+                "ovr": 82,
+                "value": 40,
+                "age": 23
+            },
+            {
+                "name": "Chaibi",
+                "pos": "LW",
+                "ovr": 80,
+                "value": 25,
+                "age": 23
+            },
+            {
+                "name": "Gotze",
+                "pos": "CAM",
+                "ovr": 81,
+                "value": 15,
+                "age": 33
+            },
+            {
+                "name": "Skhiri",
+                "pos": "CDM",
+                "ovr": 82,
+                "value": 25,
+                "age": 30
+            },
+            {
+                "name": "Larsson",
+                "pos": "CM",
+                "ovr": 81,
+                "value": 35,
+                "age": 21
+            },
+            {
+                "name": "Fra Youth 1",
+                "pos": "CB",
+                "ovr": 70,
+                "value": 5,
+                "age": 18
+            },
+            {
+                "name": "Fra Youth 2",
+                "pos": "CM",
+                "ovr": 75,
+                "value": 5,
+                "age": 17
+            },
+            {
+                "name": "Fra Youth 3",
+                "pos": "ST",
+                "ovr": 67,
+                "value": 9,
+                "age": 19
+            },
+            {
+                "name": "Fra Youth 4",
+                "pos": "GK",
+                "ovr": 67,
+                "value": 12,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Club Brugge",
+        "budget": 75,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Mignolet",
+                "pos": "GK",
+                "ovr": 79,
+                "value": 10,
+                "age": 37
+            },
+            {
+                "name": "De Cuyper",
+                "pos": "LB",
+                "ovr": 78,
+                "value": 15,
+                "age": 25
+            },
+            {
+                "name": "Mechele",
+                "pos": "CB",
+                "ovr": 76,
+                "value": 5,
+                "age": 32
+            },
+            {
+                "name": "Ordonez",
+                "pos": "CB",
+                "ovr": 77,
+                "value": 10,
+                "age": 21
+            },
+            {
+                "name": "Seys",
+                "pos": "RB",
+                "ovr": 75,
+                "value": 5,
+                "age": 20
+            },
+            {
+                "name": "Vanaken",
+                "pos": "CAM",
+                "ovr": 80,
+                "value": 20,
+                "age": 33
+            },
+            {
+                "name": "Tzolis",
+                "pos": "LW",
+                "ovr": 78,
+                "value": 15,
+                "age": 23
+            },
+            {
+                "name": "Nilsson",
+                "pos": "ST",
+                "ovr": 77,
+                "value": 10,
+                "age": 30
+            },
+            {
+                "name": "Skov Olsen",
+                "pos": "RW",
+                "ovr": 79,
+                "value": 20,
+                "age": 26
+            },
+            {
+                "name": "Onyedika",
+                "pos": "CDM",
+                "ovr": 78,
+                "value": 15,
+                "age": 24
+            },
+            {
+                "name": "Vetlesen",
+                "pos": "CM",
+                "ovr": 77,
+                "value": 10,
+                "age": 25
+            },
+            {
+                "name": "Clu Youth 1",
+                "pos": "CB",
+                "ovr": 65,
+                "value": 15,
+                "age": 18
+            },
+            {
+                "name": "Clu Youth 2",
+                "pos": "CM",
+                "ovr": 71,
+                "value": 15,
+                "age": 17
+            },
+            {
+                "name": "Clu Youth 3",
+                "pos": "ST",
+                "ovr": 74,
+                "value": 5,
+                "age": 19
+            },
+            {
+                "name": "Clu Youth 4",
+                "pos": "GK",
+                "ovr": 74,
+                "value": 14,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Slavia Praha",
+        "budget": 70,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Kinsky",
+                "pos": "GK",
+                "ovr": 75,
+                "value": 5,
+                "age": 22
+            },
+            {
+                "name": "Diouf",
+                "pos": "LB",
+                "ovr": 76,
+                "value": 10,
+                "age": 21
+            },
+            {
+                "name": "Holes",
+                "pos": "CB",
+                "ovr": 77,
+                "value": 10,
+                "age": 32
+            },
+            {
+                "name": "Zima",
+                "pos": "CB",
+                "ovr": 76,
+                "value": 10,
+                "age": 25
+            },
+            {
+                "name": "Doudera",
+                "pos": "RB",
+                "ovr": 76,
+                "value": 10,
+                "age": 27
+            },
+            {
+                "name": "Provod",
+                "pos": "CAM",
+                "ovr": 78,
+                "value": 15,
+                "age": 29
+            },
+            {
+                "name": "Chory",
+                "pos": "ST",
+                "ovr": 77,
+                "value": 10,
+                "age": 30
+            },
+            {
+                "name": "Schranz",
+                "pos": "RW",
+                "ovr": 76,
+                "value": 10,
+                "age": 32
+            },
+            {
+                "name": "Jurasek",
+                "pos": "LW",
+                "ovr": 75,
+                "value": 10,
+                "age": 22
+            },
+            {
+                "name": "Dorley",
+                "pos": "CDM",
+                "ovr": 77,
+                "value": 10,
+                "age": 27
+            },
+            {
+                "name": "Zafeiris",
+                "pos": "CM",
+                "ovr": 76,
+                "value": 10,
+                "age": 22
+            },
+            {
+                "name": "Sla Youth 1",
+                "pos": "CB",
+                "ovr": 67,
+                "value": 11,
+                "age": 18
+            },
+            {
+                "name": "Sla Youth 2",
+                "pos": "CM",
+                "ovr": 70,
+                "value": 13,
+                "age": 17
+            },
+            {
+                "name": "Sla Youth 3",
+                "pos": "ST",
+                "ovr": 75,
+                "value": 13,
+                "age": 19
+            },
+            {
+                "name": "Sla Youth 4",
+                "pos": "GK",
+                "ovr": 69,
+                "value": 9,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Copenhagen",
+        "budget": 65,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Trott",
+                "pos": "GK",
+                "ovr": 74,
+                "value": 5,
+                "age": 27
+            },
+            {
+                "name": "Diks",
+                "pos": "LB",
+                "ovr": 75,
+                "value": 5,
+                "age": 29
+            },
+            {
+                "name": "Pereira",
+                "pos": "CB",
+                "ovr": 74,
+                "value": 5,
+                "age": 25
+            },
+            {
+                "name": "Garananga",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 5,
+                "age": 25
+            },
+            {
+                "name": "Gocholeishvili",
+                "pos": "RB",
+                "ovr": 74,
+                "value": 5,
+                "age": 24
+            },
+            {
+                "name": "Elyounoussi",
+                "pos": "LW",
+                "ovr": 76,
+                "value": 10,
+                "age": 31
+            },
+            {
+                "name": "Cornelius",
+                "pos": "ST",
+                "ovr": 75,
+                "value": 5,
+                "age": 32
+            },
+            {
+                "name": "Achouri",
+                "pos": "RW",
+                "ovr": 75,
+                "value": 10,
+                "age": 26
+            },
+            {
+                "name": "Delaney",
+                "pos": "CDM",
+                "ovr": 76,
+                "value": 5,
+                "age": 34
+            },
+            {
+                "name": "Lerager",
+                "pos": "CM",
+                "ovr": 75,
+                "value": 5,
+                "age": 32
+            },
+            {
+                "name": "Claesson",
+                "pos": "CAM",
+                "ovr": 75,
+                "value": 5,
+                "age": 33
+            },
+            {
+                "name": "Cop Youth 1",
+                "pos": "CB",
+                "ovr": 67,
+                "value": 9,
+                "age": 18
+            },
+            {
+                "name": "Cop Youth 2",
+                "pos": "CM",
+                "ovr": 66,
+                "value": 13,
+                "age": 17
+            },
+            {
+                "name": "Cop Youth 3",
+                "pos": "ST",
+                "ovr": 70,
+                "value": 14,
+                "age": 19
+            },
+            {
+                "name": "Cop Youth 4",
+                "pos": "GK",
+                "ovr": 69,
+                "value": 8,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Bod\u00f8/Glimt",
+        "budget": 60,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Haikin",
+                "pos": "GK",
+                "ovr": 74,
+                "value": 5,
+                "age": 30
+            },
+            {
+                "name": "Bjorkan",
+                "pos": "LB",
+                "ovr": 73,
+                "value": 5,
+                "age": 27
+            },
+            {
+                "name": "Gundersen",
+                "pos": "CB",
+                "ovr": 72,
+                "value": 3,
+                "age": 29
+            },
+            {
+                "name": "Moe",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 3,
+                "age": 34
+            },
+            {
+                "name": "Sjovold",
+                "pos": "RB",
+                "ovr": 71,
+                "value": 3,
+                "age": 22
+            },
+            {
+                "name": "Berg",
+                "pos": "CDM",
+                "ovr": 76,
+                "value": 10,
+                "age": 28
+            },
+            {
+                "name": "Evjen",
+                "pos": "CAM",
+                "ovr": 74,
+                "value": 5,
+                "age": 25
+            },
+            {
+                "name": "Hauge",
+                "pos": "LW",
+                "ovr": 75,
+                "value": 8,
+                "age": 26
+            },
+            {
+                "name": "Hogh",
+                "pos": "ST",
+                "ovr": 73,
+                "value": 5,
+                "age": 25
+            },
+            {
+                "name": "Zinckernagel",
+                "pos": "RW",
+                "ovr": 74,
+                "value": 5,
+                "age": 31
+            },
+            {
+                "name": "Fet",
+                "pos": "CM",
+                "ovr": 72,
+                "value": 3,
+                "age": 28
+            },
+            {
+                "name": "Bod Youth 1",
+                "pos": "CB",
+                "ovr": 75,
+                "value": 6,
+                "age": 18
+            },
+            {
+                "name": "Bod Youth 2",
+                "pos": "CM",
+                "ovr": 70,
+                "value": 7,
+                "age": 17
+            },
+            {
+                "name": "Bod Youth 3",
+                "pos": "ST",
+                "ovr": 67,
+                "value": 13,
+                "age": 19
+            },
+            {
+                "name": "Bod Youth 4",
+                "pos": "GK",
+                "ovr": 65,
+                "value": 6,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Union SG",
+        "budget": 65,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Moris",
+                "pos": "GK",
+                "ovr": 75,
+                "value": 5,
+                "age": 35
+            },
+            {
+                "name": "Machida",
+                "pos": "CB",
+                "ovr": 76,
+                "value": 10,
+                "age": 28
+            },
+            {
+                "name": "Burgess",
+                "pos": "CB",
+                "ovr": 75,
+                "value": 5,
+                "age": 35
+            },
+            {
+                "name": "Mac Allister",
+                "pos": "CB",
+                "ovr": 74,
+                "value": 5,
+                "age": 28
+            },
+            {
+                "name": "Castro-Montes",
+                "pos": "RM",
+                "ovr": 75,
+                "value": 5,
+                "age": 28
+            },
+            {
+                "name": "Puertas",
+                "pos": "CAM",
+                "ovr": 78,
+                "value": 15,
+                "age": 27
+            },
+            {
+                "name": "Ivanovic",
+                "pos": "ST",
+                "ovr": 74,
+                "value": 5,
+                "age": 22
+            },
+            {
+                "name": "Fuseini",
+                "pos": "ST",
+                "ovr": 73,
+                "value": 5,
+                "age": 23
+            },
+            {
+                "name": "Lapoussin",
+                "pos": "LM",
+                "ovr": 75,
+                "value": 5,
+                "age": 29
+            },
+            {
+                "name": "Vanhoutte",
+                "pos": "CM",
+                "ovr": 74,
+                "value": 5,
+                "age": 24
+            },
+            {
+                "name": "Sadiki",
+                "pos": "CDM",
+                "ovr": 73,
+                "value": 5,
+                "age": 21
+            },
+            {
+                "name": "Uni Youth 1",
+                "pos": "CB",
+                "ovr": 67,
+                "value": 9,
+                "age": 18
+            },
+            {
+                "name": "Uni Youth 2",
+                "pos": "CM",
+                "ovr": 68,
+                "value": 12,
+                "age": 17
+            },
+            {
+                "name": "Uni Youth 3",
+                "pos": "ST",
+                "ovr": 70,
+                "value": 10,
+                "age": 19
+            },
+            {
+                "name": "Uni Youth 4",
+                "pos": "GK",
+                "ovr": 71,
+                "value": 14,
+                "age": 18
+            }
+        ]
+    },
+    {
+        "name": "Qaraba\u011f",
+        "budget": 60,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Kochalski",
+                "pos": "GK",
+                "ovr": 72,
+                "value": 3,
+                "age": 25
+            },
+            {
+                "name": "Jafarguliyev",
+                "pos": "LB",
+                "ovr": 71,
+                "value": 3,
+                "age": 25
+            },
+            {
+                "name": "Mustafazada",
+                "pos": "CB",
+                "ovr": 72,
+                "value": 3,
+                "age": 28
+            },
+            {
+                "name": "Medina",
+                "pos": "CB",
+                "ovr": 73,
+                "value": 5,
+                "age": 32
+            },
+            {
+                "name": "Vesovic",
+                "pos": "RB",
+                "ovr": 72,
+                "value": 3,
+                "age": 34
+            },
+            {
+                "name": "Zoubir",
+                "pos": "LW",
+                "ovr": 75,
+                "value": 8,
+                "age": 34
+            },
+            {
+                "name": "Juninho",
+                "pos": "ST",
+                "ovr": 76,
+                "value": 10,
+                "age": 29
+            },
+            {
+                "name": "Andrade",
+                "pos": "RW",
+                "ovr": 73,
+                "value": 5,
+                "age": 26
+            },
+            {
+                "name": "Benzia",
+                "pos": "CAM",
+                "ovr": 74,
+                "value": 5,
+                "age": 31
+            },
+            {
+                "name": "Romao",
+                "pos": "CDM",
+                "ovr": 73,
+                "value": 5,
+                "age": 27
+            },
+            {
+                "name": "Jankovic",
+                "pos": "CM",
+                "ovr": 72,
+                "value": 3,
+                "age": 30
+            },
+            {
+                "name": "T. Bayramov",
+                "pos": "RB",
+                "ovr": 71,
+                "value": 3,
+                "age": 24
+            },
+            {
+                "name": "Buntic",
+                "pos": "GK",
+                "ovr": 70,
+                "value": 2,
+                "age": 28
+            },
+            {
+                "name": "Huseynov",
+                "pos": "CB",
+                "ovr": 70,
+                "value": 2,
+                "age": 34
+            },
+            {
+                "name": "Xhixha",
+                "pos": "ST",
+                "ovr": 71,
+                "value": 3,
+                "age": 27
+            },
+            {
+                "name": "Akhundzade",
+                "pos": "RW",
+                "ovr": 69,
+                "value": 2,
+                "age": 21
+            }
+        ]
+    },
+    {
+        "name": "Kairat Almaty",
+        "budget": 40,
+        "pot": 4,
+        "squad": [
+            {
+                "name": "Ulyanov",
+                "pos": "GK",
+                "ovr": 68,
+                "value": 1,
+                "age": 24
+            },
+            {
+                "name": "Kairat LB",
+                "pos": "LB",
+                "ovr": 65,
+                "value": 1,
+                "age": 22
+            },
+            {
+                "name": "Kairat CB1",
+                "pos": "CB",
+                "ovr": 66,
+                "value": 1,
+                "age": 24
+            },
+            {
+                "name": "Kairat CB2",
+                "pos": "CB",
+                "ovr": 66,
+                "value": 1,
+                "age": 25
+            },
+            {
+                "name": "Kairat RB",
+                "pos": "RB",
+                "ovr": 65,
+                "value": 1,
+                "age": 23
+            },
+            {
+                "name": "Kairat CM",
+                "pos": "CM",
+                "ovr": 67,
+                "value": 1,
+                "age": 24
+            },
+            {
+                "name": "Paulo",
+                "pos": "CAM",
+                "ovr": 72,
+                "value": 2,
+                "age": 37
+            },
+            {
+                "name": "Kairat LW",
+                "pos": "LW",
+                "ovr": 66,
+                "value": 1,
+                "age": 21
+            },
+            {
+                "name": "Kairat ST",
+                "pos": "ST",
+                "ovr": 68,
+                "value": 1,
+                "age": 26
+            },
+            {
+                "name": "Kairat RW",
+                "pos": "RW",
+                "ovr": 66,
+                "value": 1,
+                "age": 22
+            },
+            {
+                "name": "Kairat CDM",
+                "pos": "CDM",
+                "ovr": 65,
+                "value": 1,
+                "age": 23
+            },
+            {
+                "name": "Kai Youth 1",
+                "pos": "CB",
+                "ovr": 75,
+                "value": 9,
+                "age": 18
+            },
+            {
+                "name": "Kai Youth 2",
+                "pos": "CM",
+                "ovr": 75,
+                "value": 11,
+                "age": 17
+            },
+            {
+                "name": "Kai Youth 3",
+                "pos": "ST",
+                "ovr": 74,
+                "value": 5,
+                "age": 19
+            },
+            {
+                "name": "Kai Youth 4",
+                "pos": "GK",
+                "ovr": 68,
+                "value": 9,
+                "age": 18
+            }
+        ]
+    }
+]

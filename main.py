@@ -6,13 +6,14 @@ import random
 from config import *
 from database import generate_teams, create_schedule, generate_free_agents
 from models import Player, Team, LiveMatch, create_regen
-from ui import Tab
+from ui import Tab, Button
 import views
 
 
 class UCLManager:
     def __init__(self):
         pygame.init()
+        # --- VIRTUAL RESOLUTION SETUP ---
         self.base_width = 1280
         self.base_height = 850
         self.virtual_surface = pygame.Surface((self.base_width, self.base_height))
@@ -25,16 +26,19 @@ class UCLManager:
 
         self.restart_game(initial=True)
 
+        # --- TABS SETUP ---
+        # Starting x=50 to make room for the scroll button
         self.tabs = {
-            'DASHBOARD': Tab("Dashboard", pygame.Rect(40, 100, 130, 50)),
-            'SQUAD': Tab("Squad", pygame.Rect(180, 100, 130, 50)),
-            'MARKET': Tab("Market", pygame.Rect(320, 100, 130, 50)),
-            'TRAINING': Tab("Training", pygame.Rect(460, 100, 130, 50)),
-            'SCOUTING': Tab("Scouting", pygame.Rect(600, 100, 130, 50)),
-            'TEAMS': Tab("Teams", pygame.Rect(740, 100, 130, 50)),
-            'STANDINGS': Tab("Table", pygame.Rect(880, 100, 130, 50)),
-            'FIXTURES': Tab("Knockout", pygame.Rect(1020, 100, 130, 50)),
-            'HISTORY': Tab("History", pygame.Rect(1160, 100, 80, 50))
+            'DASHBOARD': Tab("Dashboard", pygame.Rect(50, 100, 130, 50)),
+            'SQUAD': Tab("Squad", pygame.Rect(190, 100, 130, 50)),
+            'MARKET': Tab("Market", pygame.Rect(330, 100, 130, 50)),
+            'TRAINING': Tab("Training", pygame.Rect(470, 100, 130, 50)),
+            'SCOUTING': Tab("Scouting", pygame.Rect(610, 100, 130, 50)),
+            'TEAMS': Tab("Teams", pygame.Rect(750, 100, 130, 50)),
+            'STANDINGS': Tab("Table", pygame.Rect(890, 100, 130, 50)),
+            'STATS': Tab("Stats", pygame.Rect(1030, 100, 130, 50)),
+            'FIXTURES': Tab("Knockout", pygame.Rect(1170, 100, 130, 50)),
+            'HISTORY': Tab("History", pygame.Rect(1310, 100, 130, 50))  # Initially off-screen
         }
 
     def toggle_fullscreen(self):
@@ -101,6 +105,11 @@ class UCLManager:
         self.market_filter_pos = "ALL"
         self.is_typing_search = False
         self.current_live_match = None
+
+        # --- TAB SCROLL STATE ---
+        self.tab_scroll = 0
+        self.btn_tab_left = Button(5, 105, 30, 40, "<", BG_PANEL)
+        self.btn_tab_right = Button(1245, 105, 30, 40, ">", BG_PANEL)
 
         self.btn_sim = None;
         self.btn_next_season = None
@@ -261,7 +270,7 @@ class UCLManager:
         if not self.spectator_mode:
             self.check_job_offers()
             if self.job_offers:
-                self.state = 'JOBS';
+                self.state = 'JOBS'
                 return
 
         self.start_new_season_logic()
@@ -610,6 +619,14 @@ class UCLManager:
                         if random.random() < 0.15: self.current_live_match.update()
                     else:
                         m = self.current_live_match
+
+                        # --- FIX: HEAL PLAYERS AFTER LIVE MATCH ---
+                        # Reduce injury/suspension duration for players involved
+                        for p in m.home.squad + m.away.squad:
+                            if p.injury_duration > 0: p.injury_duration -= 1
+                            if p.suspension_duration > 0: p.suspension_duration -= 1
+                        # ------------------------------------------
+
                         if m.is_knockout:
                             h_s, a_s = m.home_score, m.away_score
                             winner = m.pk_winner if m.pk_winner else None
@@ -685,8 +702,11 @@ class UCLManager:
                 views.draw_world_stats(self.virtual_surface, self)
             else:
                 views.draw_header(self.virtual_surface, self)
+                # CORRECT DRAW ORDER: BG FIRST, THEN TABS
                 views.draw_content_bg(self.virtual_surface)
-                for t in self.tabs.values(): t.draw(self.virtual_surface)
+                views.draw_tab_bar(self.virtual_surface, self)
+
+                # DRAW ACTIVE CONTENT
                 if self.active_tab == 'DASHBOARD':
                     views.draw_dashboard(self.virtual_surface, self)
                 elif self.active_tab == 'SQUAD':
@@ -758,26 +778,31 @@ class UCLManager:
                         self.accept_job_offer(data)
             return
 
-        # NAVIGATION LOGIC (Tabs)
         if self.state == 'GAME':
-            for key, tab in self.tabs.items():
-                if tab.rect.collidepoint(pos):
-                    self.active_tab = key;
+            # 1. SCROLL BUTTONS
+            if self.btn_tab_left.is_clicked(pos): self.tab_scroll = max(0, self.tab_scroll - 200); return
+            if self.btn_tab_right.is_clicked(pos): self.tab_scroll = min(200, self.tab_scroll + 200); return
+
+            # 2. CHECK TABS WITH OFFSET
+            for k, tab in self.tabs.items():
+                # Fix: using 'k' instead of 'key'
+                check_rect = pygame.Rect(tab.rect.x - self.tab_scroll, tab.rect.y, tab.rect.width, tab.rect.height)
+                if check_rect.collidepoint(pos):
+                    self.active_tab = k;
                     self.scroll_y = 0;
                     self.selected_player_idx = None
-                    if key != 'TEAMS': self.selected_view_team = None
-                    if key == 'MARKET': self.refresh_market_cache()
+                    if k != 'TEAMS': self.selected_view_team = None
+                    if k == 'MARKET': self.refresh_market_cache()
                     return
 
-            # CONTENT CLICKS
+            # 3. CONTENT CLICKS
             if self.active_tab == 'TRAINING':
                 for btn in self.training_buttons:
                     if btn.is_clicked(pos): self.message = self.my_team.train_players(btn.data)
                 return
 
             if self.active_tab == 'MARKET':
-                search_rect = pygame.Rect(60, 220 + self.scroll_y, 300, 40)
-                if search_rect.collidepoint(pos):
+                if pygame.Rect(60, 220 + self.scroll_y, 300, 40).collidepoint(pos):
                     self.is_typing_search = True
                 else:
                     self.is_typing_search = False
@@ -788,23 +813,23 @@ class UCLManager:
                 if self.btn_restart and self.btn_restart.is_clicked(pos): self.restart_game()
 
             elif self.active_tab == 'SQUAD':
-                if self.spectator_mode: return
-                if self.btn_tac and self.btn_tac.is_clicked(pos):
-                    modes = ["Balanced", "Attack", "Park Bus", "Counter"]
-                    self.my_team.current_tactic = modes[(modes.index(self.my_team.current_tactic) + 1) % 4]
-                if self.btn_form and self.btn_form.is_clicked(pos):
-                    forms = ["4-3-3", "4-4-2", "3-5-2"]
-                    self.my_team.current_formation = forms[(forms.index(self.my_team.current_formation) + 1) % 3]
-                    self.my_team._cached_rating = None
-                if self.btn_sell and self.btn_sell.is_clicked(pos): self.sell_player()
-                for btn in self.squad_buttons:
-                    if btn.is_clicked(pos):
-                        if self.selected_player_idx is None:
-                            self.selected_player_idx = btn.data
-                        else:
-                            self.my_team.squad[self.selected_player_idx], self.my_team.squad[btn.data] = \
-                            self.my_team.squad[btn.data], self.my_team.squad[self.selected_player_idx]
-                            self.selected_player_idx = None
+                if not self.spectator_mode:
+                    if self.btn_tac.is_clicked(pos):
+                        modes = ["Balanced", "Attack", "Park Bus", "Counter"]
+                        self.my_team.current_tactic = modes[(modes.index(self.my_team.current_tactic) + 1) % 4]
+                    if self.btn_form.is_clicked(pos):
+                        forms = ["4-3-3", "4-4-2", "3-5-2"]
+                        self.my_team.current_formation = forms[(forms.index(self.my_team.current_formation) + 1) % 3]
+                        self.my_team._cached_rating = None
+                    if self.btn_sell.is_clicked(pos): self.sell_player()
+                    for btn in self.squad_buttons:
+                        if btn.is_clicked(pos):
+                            if self.selected_player_idx is None:
+                                self.selected_player_idx = btn.data
+                            else:
+                                self.my_team.squad[self.selected_player_idx], self.my_team.squad[btn.data] = \
+                                self.my_team.squad[btn.data], self.my_team.squad[self.selected_player_idx]
+                                self.selected_player_idx = None
 
             elif self.active_tab == 'MARKET':
                 for btn in self.market_filter_buttons:
@@ -820,7 +845,7 @@ class UCLManager:
 
             elif self.active_tab == 'SCOUTING':
                 if self.spectator_mode: return
-                if self.btn_scout_search and self.btn_scout_search.is_clicked(pos): self.scout_search_youth()
+                if self.btn_scout_search.is_clicked(pos): self.scout_search_youth()
                 for btn in self.scouting_buttons:
                     if btn.is_clicked(pos): self.execute_transfer(btn.data)
 
@@ -857,17 +882,16 @@ class UCLManager:
                 if r.collidepoint(pos): self.set_my_team(team)
 
         elif self.state == 'WINNER':
-            if self.btn_world_stats and self.btn_world_stats.is_clicked(
-                pos): self.state = 'WORLD_STATS'; self.scroll_y = 0; return
+            if self.btn_world_stats.is_clicked(pos): self.state = 'WORLD_STATS'; self.scroll_y = 0; return
             if self.btn_retire and self.btn_retire.is_clicked(pos): self.retire_career(); return
             if self.game_over:
-                if self.btn_restart and self.btn_restart.is_clicked(pos): self.restart_game()
+                if self.btn_restart.is_clicked(pos): self.restart_game()
             else:
-                if self.btn_next_season and self.btn_next_season.is_clicked(pos): self.start_new_season()
-                if self.btn_restart and self.btn_restart.is_clicked(pos): self.restart_game()
+                if self.btn_next_season.is_clicked(pos): self.start_new_season()
+                if self.btn_restart.is_clicked(pos): self.restart_game()
 
         elif self.state == 'WORLD_STATS':
-            if self.btn_back and self.btn_back.is_clicked(pos): self.state = 'WINNER'; self.scroll_y = 0; return
+            if self.btn_back.is_clicked(pos): self.state = 'WINNER'; self.scroll_y = 0; return
 
     def refresh_market_cache(self):
         all_p = []

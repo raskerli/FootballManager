@@ -28,11 +28,11 @@ class Button:
         Draws the button.
         Args:
             surface: The pygame surface to draw on.
-            mouse_pos: (x, y) tuple of the CORRECTED mouse position.
+            mouse_pos: The (x, y) tuple of the CORRECTED mouse position.
                        If None, falls back to raw pygame.mouse.get_pos().
         """
         if not self.active:
-            # Draw disabled state (dimmed)
+            # Draw disabled state (dimmed/grayed out)
             dim_color = (self.color[0] // 2, self.color[1] // 2, self.color[2] // 2)
             pygame.draw.rect(surface, dim_color, self.rect, border_radius=6)
             txt_surf = self.font.render(self.text, True, (100, 100, 100))
@@ -49,6 +49,7 @@ class Button:
         # Determine Color (Lighten if hovered)
         draw_col = self.color
         if self.hovered:
+            # Create a lighter version of the base color
             draw_col = (min(255, self.color[0] + 30), min(255, self.color[1] + 30), min(255, self.color[2] + 30))
 
         # Draw Button Body
@@ -104,10 +105,10 @@ def draw_card(surface, rect, color=BG_PANEL, border=False):
 # Y=0 is Top Touchline, Y=100 is Bottom Touchline.
 FORMATION_COORDS = {
     "4-3-3": [
-        (6, 50),  # GK (Far Left)
-        (22, 15), (22, 38), (22, 62), (22, 85),  # DEF (Left Back -> Right Back)
-        (45, 25), (40, 50), (45, 75),  # MID (Left CM, CDM, Right CM)
-        (75, 15), (80, 50), (75, 85)  # FWD (LW, ST, RW)
+        (6, 50),  # 0: GK (Far Left)
+        (22, 15), (22, 38), (22, 62), (22, 85),  # 1-4: DEF (LB, CB, CB, RB)
+        (40, 25), (58, 50), (40, 75),  # 5-7: MID (LCM, CAM, RCM) -> CAM pushed to X=58
+        (75, 15), (80, 50), (75, 85)  # 8-10: FWD (LW, ST, RW)
     ],
     "4-4-2": [
         (6, 50),  # GK

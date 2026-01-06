@@ -27,6 +27,7 @@ class UCLManager:
         self.restart_game(initial=True)
 
         # --- TABS SETUP ---
+        # Starting x=50 to make room for the scroll button
         self.tabs = {
             'DASHBOARD': Tab("Dashboard", pygame.Rect(50, 100, 130, 50)),
             'SQUAD': Tab("Squad", pygame.Rect(190, 100, 130, 50)),
@@ -110,6 +111,7 @@ class UCLManager:
         self.btn_tab_left = Button(5, 105, 30, 40, "<", BG_PANEL)
         self.btn_tab_right = Button(1245, 105, 30, 40, ">", BG_PANEL)
 
+        # Initialize ALL buttons to None to prevent crashes
         self.btn_sim = None;
         self.btn_next_season = None
         self.btn_save = None;
@@ -121,8 +123,7 @@ class UCLManager:
         self.btn_spectate = None;
         self.btn_world_stats = None;
         self.btn_back = None
-        self.btn_retire = None
-        # Default tactic buttons to avoid crashes before draw
+        self.btn_retire = None;
         self.btn_tac = None;
         self.btn_form = None
 
@@ -788,6 +789,7 @@ class UCLManager:
 
             # 2. CHECK TABS WITH OFFSET
             for k, tab in self.tabs.items():
+                # Fix: using 'k' instead of 'key'
                 check_rect = pygame.Rect(tab.rect.x - self.tab_scroll, tab.rect.y, tab.rect.width, tab.rect.height)
                 if check_rect.collidepoint(pos):
                     self.active_tab = k;
@@ -848,7 +850,7 @@ class UCLManager:
 
             elif self.active_tab == 'SCOUTING':
                 if self.spectator_mode: return
-                if self.btn_scout_search.is_clicked(pos): self.scout_search_youth()
+                if self.btn_scout_search and self.btn_scout_search.is_clicked(pos): self.scout_search_youth()
                 for btn in self.scouting_buttons:
                     if btn.is_clicked(pos): self.execute_transfer(btn.data)
 
@@ -885,16 +887,18 @@ class UCLManager:
                 if r.collidepoint(pos): self.set_my_team(team)
 
         elif self.state == 'WINNER':
-            if self.btn_world_stats.is_clicked(pos): self.state = 'WORLD_STATS'; self.scroll_y = 0; return
+            # FIX: Added Check if Buttons Exist before clicking
+            if self.btn_world_stats and self.btn_world_stats.is_clicked(
+                pos): self.state = 'WORLD_STATS'; self.scroll_y = 0; return
             if self.btn_retire and self.btn_retire.is_clicked(pos): self.retire_career(); return
             if self.game_over:
-                if self.btn_restart.is_clicked(pos): self.restart_game()
+                if self.btn_restart and self.btn_restart.is_clicked(pos): self.restart_game()
             else:
-                if self.btn_next_season.is_clicked(pos): self.start_new_season()
-                if self.btn_restart.is_clicked(pos): self.restart_game()
+                if self.btn_next_season and self.btn_next_season.is_clicked(pos): self.start_new_season()
+                if self.btn_restart and self.btn_restart.is_clicked(pos): self.restart_game()
 
         elif self.state == 'WORLD_STATS':
-            if self.btn_back.is_clicked(pos): self.state = 'WINNER'; self.scroll_y = 0; return
+            if self.btn_back and self.btn_back.is_clicked(pos): self.state = 'WINNER'; self.scroll_y = 0; return
 
     def refresh_market_cache(self):
         all_p = []

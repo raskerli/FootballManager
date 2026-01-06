@@ -18,11 +18,10 @@ def draw_header(screen, game):
         screen.blit(get_font(16).render(f"Observing League | {game.current_year}", True, ACCENT_GOLD), (32, 55))
     else:
         screen.blit(get_font(36, True).render(game.my_team.name, True, TEXT_WHITE), (30, 15))
-        # Header Stats
+        # Updated header to show Reputation
         info_txt = f"OVR: {game.my_team.get_xi_rating()}  |  ${game.my_team.budget}M  |  Rep: {game.manager_rep}"
         screen.blit(get_font(16).render(info_txt, True, ACCENT_CYAN), (32, 55))
 
-    # Phase Indicator
     col = ACCENT_GREEN if game.phase == "LEAGUE" else ACCENT_RED
     pygame.draw.rect(screen, col, (SCREEN_WIDTH - 180, 25, 150, 30), border_radius=15)
     screen.blit(get_font(14, True).render(game.phase, True, BG_DARK), (SCREEN_WIDTH - 160, 32))
@@ -33,12 +32,43 @@ def draw_footer(screen, message):
     screen.blit(get_font(14).render(f"STATUS: {message}", True, TEXT_GRAY), (15, SCREEN_HEIGHT - 24))
 
 
+# --- TAB BAR (NEW) ---
+def draw_tab_bar(screen, game):
+    m_pos = game.get_game_mouse_pos()
+
+    # Draw Tab Bar Background
+    pygame.draw.rect(screen, BG_HEADER, (0, 100, 1280, 50))
+
+    # Draw Scroll Buttons
+    game.btn_tab_left.draw(screen, m_pos)
+    game.btn_tab_right.draw(screen, m_pos)
+
+    # Draw Tabs with Offset
+    # We define a "clip" area so tabs don't draw over the buttons
+    clip_rect = pygame.Rect(40, 100, 1200, 50)
+    screen.set_clip(clip_rect)
+
+    for k, tab in game.tabs.items():
+        tab.selected = (game.active_tab == k)
+        # Create a temporary shifted rect for drawing
+        drawn_rect = pygame.Rect(tab.rect.x - game.tab_scroll, tab.rect.y, tab.rect.width, tab.rect.height)
+
+        # Manually draw the tab using the shifted rect
+        col = ACCENT_GOLD if tab.selected else BG_PANEL
+        pygame.draw.rect(screen, col, drawn_rect, border_top_left_radius=10, border_top_right_radius=10)
+        pygame.draw.rect(screen, (200, 200, 200), drawn_rect, 2, border_top_left_radius=10, border_top_right_radius=10)
+
+        txt_col = BG_DARK if tab.selected else TEXT_GRAY
+        txt = get_font(18, True).render(tab.text, True, txt_col)
+        screen.blit(txt, txt.get_rect(center=drawn_rect.center))
+
+    screen.set_clip(None)  # Reset clipping
+
+
 # --- SCREEN FUNCTIONS ---
 
 def draw_dashboard(screen, game):
-    m_pos = game.get_game_mouse_pos()  # Corrected Mouse Position
-
-    # Next Fixture Card
+    m_pos = game.get_game_mouse_pos()
     draw_card(screen, pygame.Rect(40, 170, 400, 220))
     screen.blit(get_font(14, True).render("NEXT FIXTURE", True, ACCENT_GOLD), (60, 190))
 
@@ -61,7 +91,6 @@ def draw_dashboard(screen, game):
             screen.blit(get_font(16).render("vs", True, TEXT_GRAY), (60, 250))
             screen.blit(get_font(24, True).render(next_opp, True, TEXT_WHITE), (60, 275))
 
-            # Tactical Scout Report
             if opp_obj:
                 screen.blit(
                     get_font(14).render(f"Scout Report: Expecting '{opp_obj.current_tactic}'", True, ACCENT_RED),
@@ -77,7 +106,6 @@ def draw_dashboard(screen, game):
         if game.phase != "KNOCKOUT": game.btn_sim.active = False
     game.btn_sim.draw(screen, m_pos)
 
-    # Team Stats Cards
     if not game.spectator_mode:
         s_labels = ["WINS", "GOALS", "POINTS"]
         s_vals = [game.my_team.won, game.my_team.gf, game.my_team.points]
@@ -91,7 +119,6 @@ def draw_dashboard(screen, game):
         draw_card(screen, pygame.Rect(460, 170, 760, 100))
         screen.blit(get_font(20).render("You are watching the simulation.", True, TEXT_GRAY), (480, 210))
 
-    # Controls Card
     draw_card(screen, pygame.Rect(460, 290, 760, 100))
     screen.blit(get_font(14, True).render("GAME CONTROLS", True, TEXT_GRAY), (480, 305))
     game.btn_save = Button(480, 335, 150, 40, "SAVE GAME", ACCENT_GREEN, font_size=14)
@@ -99,7 +126,6 @@ def draw_dashboard(screen, game):
     game.btn_restart = Button(650, 335, 150, 40, "MAIN MENU", ACCENT_RED, font_size=14)
     game.btn_restart.draw(screen, m_pos)
 
-    # News Feed
     draw_card(screen, pygame.Rect(40, 410, 1180, 380))
     screen.blit(get_font(18, True).render("LEAGUE NEWS", True, ACCENT_CYAN), (60, 430))
     pygame.draw.line(screen, TEXT_MUTED, (60, 460), (1180, 460), 1)
@@ -127,7 +153,7 @@ def draw_squad(screen, game):
     game.squad_buttons = []
     scroll = game.scroll_y
 
-    # Left Panel: Tactics & Player Info
+    # Left Panel
     draw_card(screen, pygame.Rect(40, 170 + scroll, 300, 620))
     screen.blit(get_font(20, True).render("TACTICS BOARD", True, ACCENT_GOLD), (60, 190 + scroll))
 
@@ -171,7 +197,9 @@ def draw_squad(screen, game):
     pitch_x, pitch_y = 360, 170 + scroll
     pitch_w, pitch_h = 880, 620
 
+    # Grass
     pygame.draw.rect(screen, PITCH_DARK, (pitch_x, pitch_y, pitch_w, pitch_h), border_radius=15)
+    # Stripes
     for i in range(0, pitch_w, 100):
         if (i // 100) % 2 == 0:
             s = pygame.Surface((100, pitch_h))
@@ -179,27 +207,32 @@ def draw_squad(screen, game):
             s.fill((0, 0, 0))
             screen.blit(s, (pitch_x + i, pitch_y))
 
+    # Lines (White)
     pygame.draw.rect(screen, (220, 220, 220), (pitch_x, pitch_y, pitch_w, pitch_h), 3, border_radius=15)
 
-    # Center Line (Vertical)
+    # Center Line (Vertical in Horizontal View)
     mid_x = pitch_x + pitch_w // 2
     pygame.draw.line(screen, (220, 220, 220), (mid_x, pitch_y), (mid_x, pitch_y + pitch_h), 3)
+
+    # Center Circle
     mid_y = pitch_y + pitch_h // 2
     pygame.draw.circle(screen, (220, 220, 220), (mid_x, mid_y), 70, 3)
 
-    # Goal Boxes
+    # Goal Boxes (Left and Right)
     box_w, box_h = 100, 250
+    # Left Box
     pygame.draw.rect(screen, (220, 220, 220), (pitch_x, mid_y - box_h // 2, box_w, box_h), 3)
+    # Right Box
     pygame.draw.rect(screen, (220, 220, 220), (pitch_x + pitch_w - box_w, mid_y - box_h // 2, box_w, box_h), 3)
 
-    # --- DRAW PLAYERS (Horizontal Coordinates) ---
+    # DRAW PLAYERS (Horizontal)
     coords = FORMATION_COORDS.get(game.my_team.current_formation, FORMATION_COORDS["4-3-3"])
     for i, p in enumerate(game.my_team.squad[:11]):
         if i >= len(coords): break
-        ox, oy = coords[i]
+        ox, oy = coords[i]  # 0-100 values
 
-        # Scale 0-100 to pitch size
-        bx = pitch_x + int((ox / 100) * (pitch_w - 110)) + 10
+        # Scale 0-100 to pitch dimensions
+        bx = pitch_x + int((ox / 100) * (pitch_w - 110)) + 10  # Offset to keep inside
         by = pitch_y + int((oy / 100) * (pitch_h - 40)) + 10
 
         col = ACCENT_GOLD if game.selected_player_idx == i else BG_PANEL
@@ -213,14 +246,14 @@ def draw_squad(screen, game):
         btn.draw(screen, m_pos)
         game.squad_buttons.append(btn)
 
-        # Rating Pill
+        # OVR Pill
         eff = getattr(p, 'effective_ovr', p.raw_ovr)
         pill_col = ACCENT_GREEN if eff >= p.raw_ovr else ACCENT_RED
         pygame.draw.rect(screen, pill_col, (bx + 35, by + 40, 40, 16), border_radius=8)
         val = get_font(12, True).render(str(int(eff)), True, BG_DARK)
         screen.blit(val, val.get_rect(center=(bx + 55, by + 48)))
 
-    # --- DRAW SUBSTITUTES ---
+    # SUBS
     subs_start_y = 820 + scroll
     screen.blit(get_font(20, True).render("SUBSTITUTES", True, TEXT_WHITE), (370, subs_start_y - 25))
     subs = game.my_team.squad[11:]
@@ -395,7 +428,6 @@ def draw_training(screen, game):
         game.training_buttons.append(btn)
 
 
-# --- SCOUTING ---
 def draw_scouting(screen, game):
     if game.spectator_mode: return
     m_pos = game.get_game_mouse_pos()
@@ -518,7 +550,7 @@ def draw_standings(screen, game):
             screen.blit(get_font(16, j == 1).render(v, True, c), (x, y_pos + 15))
 
 
-# --- JOB OFFERS ---
+# --- NEW: JOB OFFER SCREEN ---
 def draw_jobs(screen, game):
     m_pos = game.get_game_mouse_pos()
     screen.fill(BG_DARK)
